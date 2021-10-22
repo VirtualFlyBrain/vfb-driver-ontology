@@ -1,0 +1,27 @@
+# PURL configuration for http://purl.obolibrary.org/obo/VFB_drivers
+
+idspace: VFB_DRIVERS
+base_url: /obo/VFB_drivers
+
+products:
+- VFB_drivers.owl: https://raw.githubusercontent.com/VirtualFlyBrain/vfb-driver-ontology/main/VFB_drivers.owl
+- VFB_drivers.obo: https://raw.githubusercontent.com/VirtualFlyBrain/vfb-driver-ontology/main/VFB_drivers.obo
+
+term_browser: ontobee
+example_terms:
+- VFB_DRIVERS_0000000
+
+entries:
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/VirtualFlyBrain/vfb-driver-ontology/v
+
+- prefix: /tracker/
+  replacement: https://github.com/VirtualFlyBrain/vfb-driver-ontology/issues
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/ontology/VFB_DRIVERS?iri=http://purl.obolibrary.org/obo/
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://raw.githubusercontent.com/VirtualFlyBrain/vfb-driver-ontology/main/

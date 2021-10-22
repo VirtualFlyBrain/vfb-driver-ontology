@@ -1,0 +1,13 @@
+format-version: 1.2
+data-version: VFB_drivers/releases/2021-10-22/VFB_drivers-simple.owl
+date: 22:10:2021 11:55
+ontology: VFB_drivers/VFB_drivers-simple
+property_value: http://purl.org/dc/elements/1.1/description "None" xsd:string
+property_value: http://purl.org/dc/elements/1.1/title "VFB Driver Ontology" xsd:string
+property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/unspecified
+property_value: owl:versionInfo "2021-10-22" xsd:string
+
+[Term]
+id: VFB_DRIVERS:00000000
+name: root node
+

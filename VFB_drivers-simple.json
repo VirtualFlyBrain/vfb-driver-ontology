@@ -1,0 +1,46 @@
+{
+  "graphs": [
+    {
+      "domainRangeAxioms": [],
+      "edges": [],
+      "equivalentNodesSets": [],
+      "id": "http://purl.obolibrary.org/obo/VFB_drivers/VFB_drivers-simple.json",
+      "logicalDefinitionAxioms": [],
+      "meta": {
+        "basicPropertyValues": [
+          {
+            "pred": "http://purl.org/dc/elements/1.1/description",
+            "val": "None"
+          },
+          {
+            "pred": "http://purl.org/dc/elements/1.1/title",
+            "val": "VFB Driver Ontology"
+          },
+          {
+            "pred": "http://purl.org/dc/terms/license",
+            "val": "https://creativecommons.org/licenses/unspecified"
+          },
+          {
+            "pred": "http://www.geneontology.org/formats/oboInOwl#date",
+            "val": "22:10:2021 11:55"
+          },
+          {
+            "pred": "http://www.w3.org/2002/07/owl#versionInfo",
+            "val": "2021-10-22"
+          }
+        ],
+        "subsets": [],
+        "version": "http://purl.obolibrary.org/obo/VFB_drivers/releases/2021-10-22/VFB_drivers-simple.json",
+        "xrefs": []
+      },
+      "nodes": [
+        {
+          "id": "http://purl.obolibrary.org/obo/VFB_DRIVERS_00000000",
+          "lbl": "root node",
+          "type": "CLASS"
+        }
+      ],
+      "propertyChainAxioms": []
+    }
+  ]
+}

@@ -233,6 +233,14 @@ imports/so_import.owl: mirror/so.owl imports/so_terms_combined.txt
 		remove $(patsubst %, --term %, $(ANNOTATION_PROPERTIES)) -T imports/so_terms_combined.txt --select complement --select "classes individuals annotation-properties" \
 		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
 
+## Module for ontology: vfbext
+
+imports/vfbext_import.owl: mirror/vfbext.owl imports/vfbext_terms_combined.txt
+	if [ $(IMP) = true ]; then $(ROBOT) query  -i $< --update ../sparql/preprocess-module.ru \
+		extract -T imports/vfbext_terms_combined.txt --force true --individuals exclude --method STAR \
+		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/postprocess-module.ru \
+		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
+
 .PHONY: refresh-imports
 refresh-imports:
 	make IMP=true MIR=true PAT=false IMP_LARGE=true all_imports -B

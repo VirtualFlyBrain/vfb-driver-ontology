@@ -3,5 +3,5 @@ WHERE {
   { ?s1 ?p1 ?term . }
   UNION
   { ?term ?p2 ?o2 . }
-  FILTER(isIRI(?term) && (regex(str(?term), UCASE("VFB_drivers_")) || regex(str(?term), "http://virtualflybrain.org/reports/VFBexp_")))
+  FILTER(isIRI(?term) && (regex(str(?term), UCASE("VFB_drivers_")) || regex(str(?term), "http://virtualflybrain.org/reports/VFBexp_") || regex(str(?term), "http://flybase.org/reports/")))
 }

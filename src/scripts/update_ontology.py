@@ -6,15 +6,19 @@ import pandas as pd
 from collections import OrderedDict
 import json
 
-nc = Neo4jConnect('http://pdb.virtualflybrain.org', 'neo4j', 'neo4j')
+nc = Neo4jConnect('http://pdb.v4.virtualflybrain.org', 'neo4j', 'neo4j')
 
-query = ("MATCH (s:Split:Class) OPTIONAL MATCH (s)-[:has_hemidriver]->(h) "
-         "RETURN DISTINCT s.label, s.iri, s.has_exact_synonym, s.description, COLLECT(h.iri)")
+query = ("MATCH (s:Split:Class) WHERE NOT s.deprecated=True OR s.deprecated "
+         "IS NULL OPTIONAL MATCH (s)-[:has_hemidriver]->(h) WHERE NOT "
+         "h.deprecated=True OR h.deprecated IS NULL RETURN DISTINCT "
+         "s.label, s.iri, s.has_exact_synonym, s.description, COLLECT(h.iri)")
 q = nc.commit_list([query])
 splits = dict_cursor(q)
 splits_df = pd.DataFrame.from_dict(splits)
 
-query = "MATCH (s:Split:Class)-[:has_hemidriver]->(h) RETURN DISTINCT h.label, h.iri, h.synonyms"
+query = ("MATCH (s:Split:Class)-[:has_hemidriver]->(h) WHERE NOT "
+         "h.deprecated=True OR h.deprecated IS NULL RETURN DISTINCT "
+         "h.label, h.iri, h.synonyms")
 q = nc.commit_list([query])
 hemidrivers = dict_cursor(q)
 hemidrivers_df = pd.DataFrame.from_dict(hemidrivers)
@@ -23,10 +27,13 @@ hemidrivers_df = pd.DataFrame.from_dict(hemidrivers)
 template_seed = OrderedDict([('ID' , 'ID'), ('TYPE' , 'TYPE' )])
 
 #label, description, synonyms:
-template_seed.update([("Name" , "A rdfs:label"), ("Definition" , "A IAO:0000115"), ("Synonyms" , "A oboInOwl:hasExactSynonym SPLIT=|")])
+template_seed.update([("Name" , "A rdfs:label"), 
+                      ("Definition" , "A IAO:0000115"), 
+                      ("Synonyms" , "A oboInOwl:hasExactSynonym SPLIT=|")])
 
 # Relationships:
-template_seed.update([("Parent" , "C %"), ("Hemidrivers" , "C has_hemidriver some % SPLIT=|")])
+template_seed.update([("Parent" , "C %"), 
+                      ("Hemidrivers" , "C has_hemidriver some % SPLIT=|")])
 
 # Create dataFrame for template
 template = pd.DataFrame.from_records([template_seed])

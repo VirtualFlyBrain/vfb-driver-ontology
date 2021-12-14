@@ -23,6 +23,23 @@ q = nc.commit_list([query])
 hemidrivers = dict_cursor(q)
 hemidrivers_df = pd.DataFrame.from_dict(hemidrivers)
 
+query = ("MATCH (f:Feature) WHERE f.iri CONTAINS \"FBti\" AND NOT "
+         "f.deprecated=True OR f.deprecated IS NULL RETURN DISTINCT "
+         "f.label, f.iri, f.synonyms")
+q = nc.commit_list([query])
+features_1 = dict_cursor(q)
+features_1_df = pd.DataFrame.from_dict(features_1)
+
+query = ("MATCH (f:Feature) WHERE f.iri CONTAINS \"FBtp\" AND NOT "
+         "f.deprecated=True OR f.deprecated IS NULL RETURN DISTINCT "
+         "f.label, f.iri, f.synonyms")
+q = nc.commit_list([query])
+features_2 = dict_cursor(q)
+features_2_df = pd.DataFrame.from_dict(features_2)
+
+features_df = pd.concat([features_1_df, features_2_df], ignore_index = True)
+features_df = features_df[~features_df["f.iri"].isin(hemidrivers_df["h.iri"])]
+
 # ROBOT template columns
 template_seed = OrderedDict([('ID' , 'ID'), ('TYPE' , 'TYPE' )])
 
@@ -98,6 +115,31 @@ for i in hemidrivers_df.index:
     #synonyms - if not None
     try:
         row_od["Synonyms"] = '|'.join(hemidrivers_df["h.synonyms"][i])
+    except TypeError:
+        pass
+
+    #make new row into a DataFrame and add it to template
+    new_row = pd.DataFrame.from_records([row_od])
+    template = pd.concat([template, new_row], ignore_index=True, sort=False)
+
+# add rows for other features
+for i in features_df.index:
+
+    row_od = OrderedDict([]) #new template row as an empty ordered dictionary
+    for c in template.columns: #make columns and blank data for new template row
+        row_od.update([(c , "")])
+    
+    #these are the same in each row
+    row_od["TYPE"] = "owl:Class"
+    row_od["Parent"] = "http://purl.obolibrary.org/obo/SO_0000110"
+
+    #easy to generate data
+    row_od["ID"] = features_df["f.iri"][i]
+    row_od["Name"] = features_df["f.label"][i]
+    
+    #synonyms - if not None
+    try:
+        row_od["Synonyms"] = '|'.join(features_df["f.synonyms"][i])
     except TypeError:
         pass
 

@@ -6,27 +6,51 @@ import pandas as pd
 from collections import OrderedDict
 import json
 
-nc = Neo4jConnect('http://pdb.virtualflybrain.org', 'neo4j', 'neo4j')
+nc = Neo4jConnect('http://pdb.v4.virtualflybrain.org', 'neo4j', 'neo4j')
 
-query = ("MATCH (s:Split:Class) OPTIONAL MATCH (s)-[:has_hemidriver]->(h) "
-         "RETURN DISTINCT s.label, s.iri, s.has_exact_synonym, s.description, COLLECT(h.iri)")
+query = ("MATCH (s:Split:Class) WHERE NOT s.deprecated=True OR s.deprecated "
+         "IS NULL OPTIONAL MATCH (s)-[:has_hemidriver]->(h) WHERE NOT "
+         "h.deprecated=True OR h.deprecated IS NULL RETURN DISTINCT "
+         "s.label, s.iri, s.has_exact_synonym, s.description, COLLECT(h.iri)")
 q = nc.commit_list([query])
 splits = dict_cursor(q)
 splits_df = pd.DataFrame.from_dict(splits)
 
-query = "MATCH (s:Split:Class)-[:has_hemidriver]->(h) RETURN DISTINCT h.label, h.iri, h.synonyms"
+query = ("MATCH (s:Split:Class)-[:has_hemidriver]->(h) WHERE NOT "
+         "h.deprecated=True OR h.deprecated IS NULL RETURN DISTINCT "
+         "h.label, h.iri, h.synonyms")
 q = nc.commit_list([query])
 hemidrivers = dict_cursor(q)
 hemidrivers_df = pd.DataFrame.from_dict(hemidrivers)
+
+query = ("MATCH (f:Feature) WHERE f.iri CONTAINS \"FBti\" AND NOT "
+         "f.deprecated=True OR f.deprecated IS NULL RETURN DISTINCT "
+         "f.label, f.iri, f.synonyms")
+q = nc.commit_list([query])
+features_1 = dict_cursor(q)
+features_1_df = pd.DataFrame.from_dict(features_1)
+
+query = ("MATCH (f:Feature) WHERE f.iri CONTAINS \"FBtp\" AND NOT "
+         "f.deprecated=True OR f.deprecated IS NULL RETURN DISTINCT "
+         "f.label, f.iri, f.synonyms")
+q = nc.commit_list([query])
+features_2 = dict_cursor(q)
+features_2_df = pd.DataFrame.from_dict(features_2)
+
+features_df = pd.concat([features_1_df, features_2_df], ignore_index = True)
+features_df = features_df[~features_df["f.iri"].isin(hemidrivers_df["h.iri"])]
 
 # ROBOT template columns
 template_seed = OrderedDict([('ID' , 'ID'), ('TYPE' , 'TYPE' )])
 
 #label, description, synonyms:
-template_seed.update([("Name" , "A rdfs:label"), ("Definition" , "A IAO:0000115"), ("Synonyms" , "A oboInOwl:hasExactSynonym SPLIT=|")])
+template_seed.update([("Name" , "A rdfs:label"), 
+                      ("Definition" , "A IAO:0000115"), 
+                      ("Synonyms" , "A oboInOwl:hasExactSynonym SPLIT=|")])
 
 # Relationships:
-template_seed.update([("Parent" , "C %"), ("Hemidrivers" , "C has_hemidriver some % SPLIT=|")])
+template_seed.update([("Parent" , "C %"), 
+                      ("Hemidrivers" , "C has_hemidriver some % SPLIT=|")])
 
 # Create dataFrame for template
 template = pd.DataFrame.from_records([template_seed])
@@ -91,6 +115,31 @@ for i in hemidrivers_df.index:
     #synonyms - if not None
     try:
         row_od["Synonyms"] = '|'.join(hemidrivers_df["h.synonyms"][i])
+    except TypeError:
+        pass
+
+    #make new row into a DataFrame and add it to template
+    new_row = pd.DataFrame.from_records([row_od])
+    template = pd.concat([template, new_row], ignore_index=True, sort=False)
+
+# add rows for other features
+for i in features_df.index:
+
+    row_od = OrderedDict([]) #new template row as an empty ordered dictionary
+    for c in template.columns: #make columns and blank data for new template row
+        row_od.update([(c , "")])
+    
+    #these are the same in each row
+    row_od["TYPE"] = "owl:Class"
+    row_od["Parent"] = "http://purl.obolibrary.org/obo/SO_0000110"
+
+    #easy to generate data
+    row_od["ID"] = features_df["f.iri"][i]
+    row_od["Name"] = features_df["f.label"][i]
+    
+    #synonyms - if not None
+    try:
+        row_od["Synonyms"] = '|'.join(features_df["f.synonyms"][i])
     except TypeError:
         pass
 

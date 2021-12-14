@@ -1,0 +1,23 @@
+## REMEMBER TO SET UP YOUR GITHUB REPO FOR TRAVIS
+## Go to: https://travis-ci.com/VirtualFlyBrain for details
+sudo: required
+
+services:
+  - docker
+
+before_install:
+  - docker pull obolibrary/odklite
+
+# command to run tests
+script: cd src/ontology && sh travis.sh
+
+# whitelist
+branches:
+  only:
+    - master
+    - test-travis
+
+### Add your own lists here
+notifications:
+  email:
+    - cp390@cam.ac.uk

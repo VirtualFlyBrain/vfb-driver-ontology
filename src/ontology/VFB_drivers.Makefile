@@ -16,6 +16,7 @@ update_ontology:
 	rm template.tsv ./tmp/VFB_drivers-edit-tmp.owl
 
 $(ONT).owl: $(ONT)-full.owl
-	$(ROBOT) annotate --input $< --ontology-iri http://virtualflybrain.org/data/VFB/OWL/vfb_drivers.owl \
+	grep -v owl:versionIRI $< > $@.tmp.owl
+	$(ROBOT) annotate -i $@.tmp.owl --ontology-iri http://virtualflybrain.org/data/VFB/OWL/vfb_drivers.owl \
 		convert -o $@.tmp.owl && mv $@.tmp.owl $@
 

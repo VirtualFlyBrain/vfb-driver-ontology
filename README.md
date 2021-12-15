@@ -1,10 +1,8 @@
 
-![Build Status](https://github.com/VirtualFlyBrain/vfb-driver-ontology/workflows/CI/badge.svg)
+![Build Status](https://app.travis-ci.com/VirtualFlyBrain/vfb-driver-ontology.svg?branch=master)
 # VFB Driver Ontology
 
-Description: None
-
-More information can be found at http://obofoundry.org/ontology/VFB_drivers
+Description: An ontology of Drosophila melanogaster drivers and expression patterns.
 
 ## Versions
 
@@ -12,9 +10,7 @@ More information can be found at http://obofoundry.org/ontology/VFB_drivers
 
 The latest version of the ontology can always be found at:
 
-http://purl.obolibrary.org/obo/VFB_drivers.owl
-
-(note this will not show up until the request has been approved by obofoundry.org)
+http://virtualflybrain.org/data/VFB/OWL/vfb_drivers.owl
 
 ### Editors' version
 

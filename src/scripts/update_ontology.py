@@ -23,15 +23,15 @@ q = nc.commit_list([query])
 hemidrivers = dict_cursor(q)
 hemidrivers_df = pd.DataFrame.from_dict(hemidrivers)
 
-query = ("MATCH (f:Feature) WHERE f.iri CONTAINS \"FBti\" AND NOT "
-         "f.deprecated=True OR f.deprecated IS NULL RETURN DISTINCT "
+query = ("MATCH (f:Feature) WHERE f.iri CONTAINS \"FBti\" AND (NOT "
+         "f.deprecated=True OR f.deprecated IS NULL) RETURN DISTINCT "
          "f.label, f.iri, f.synonyms")
 q = nc.commit_list([query])
 features_1 = dict_cursor(q)
 features_1_df = pd.DataFrame.from_dict(features_1)
 
-query = ("MATCH (f:Feature) WHERE f.iri CONTAINS \"FBtp\" AND NOT "
-         "f.deprecated=True OR f.deprecated IS NULL RETURN DISTINCT "
+query = ("MATCH (f:Feature) WHERE f.iri CONTAINS \"FBtp\" AND (NOT "
+         "f.deprecated=True OR f.deprecated IS NULL) RETURN DISTINCT "
          "f.label, f.iri, f.synonyms")
 q = nc.commit_list([query])
 features_2 = dict_cursor(q)

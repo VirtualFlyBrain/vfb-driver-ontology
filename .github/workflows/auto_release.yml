@@ -1,8 +1,11 @@
 name: auto_release
 
 on:
+
   schedule:
-  - cron: "15 10 * * *"
+  - cron: "30 11 * * *"
+  
+  workflow_dispatch:
 
 jobs:
   build:
@@ -15,4 +18,5 @@ jobs:
     - name: Run ontology release
       env:
         DEFAULT_BRANCH: master
-      run: cd src/ontology && sh run_release.sh
+      run: cd src/ontology && make ROBOT_ENV='ROBOT_JAVA_ARGS=-Xmx6G' update_ontology -B && make ROBOT_ENV='ROBOT_JAVA_ARGS=-Xmx6G' prepare_release -B
+

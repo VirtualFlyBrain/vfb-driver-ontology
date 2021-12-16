@@ -1,0 +1,18 @@
+name: auto_release
+
+on:
+  schedule:
+  - cron: "15 10 * * *"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container: obolibrary/odkfull
+    
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Run ontology release
+      env:
+        DEFAULT_BRANCH: master
+      run: cd src/ontology && sh run_release.sh

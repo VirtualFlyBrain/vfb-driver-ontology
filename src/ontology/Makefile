@@ -46,7 +46,7 @@ ANNOTATE_ONTOLOGY_VERSION = annotate -V $(ONTBASE)/releases/$(VERSION)/$@ --anno
 OTHER_SRC =                 
 ONTOLOGYTERMS =             $(TMPDIR)/ontologyterms.txt
 
-FORMATS = $(sort  owl obo json owl)
+FORMATS = $(sort  owl owl)
 FORMATS_INCL_TSV = $(sort $(FORMATS) tsv)
 RELEASE_ARTEFACTS = $(sort $(ONT)-base $(ONT)-simple $(ONT)-non-classified $(ONT)-full $(ONT)-base $(ONT)-full)
 
@@ -314,13 +314,6 @@ subsets/%.owl: $(ONT).owl
 .PRECIOUS: subsets/%.owl
 
 
-subsets/%.obo: subsets/%.owl
-	$(ROBOT) convert --input $< --check false -f obo $(OBO_FORMAT_OPTIONS) -o $@.tmp.obo && grep -v ^owl-axioms $@.tmp.obo > $@ && rm $@.tmp.obo
-
-subsets/%.json: subsets/%.owl
-	$(ROBOT) convert --input $< --check false -f json -o $@.tmp.json &&\
-	jq -S 'walk(if type == "array" then sort else . end)' $@.tmp.json > $@ && rm $@.tmp.json
-
 
 # ----------------------------------------
 # Release
@@ -373,30 +366,6 @@ endif
 # ----------------------------------------
 
 
-$(ONT)-base.obo: $(ONT)-base.owl
-	$(ROBOT) convert --input $< --check false -f obo $(OBO_FORMAT_OPTIONS) -o $@.tmp.obo && grep -v ^owl-axioms $@.tmp.obo > $@ && rm $@.tmp.obo
-$(ONT)-base.json: $(ONT)-base.owl
-	$(ROBOT) annotate --input $< --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
-		convert --check false -f json -o $@.tmp.json &&\
-	jq -S 'walk(if type == "array" then sort else . end)' $@.tmp.json > $@ && rm $@.tmp.json
-$(ONT)-simple.obo: $(ONT)-simple.owl
-	$(ROBOT) convert --input $< --check false -f obo $(OBO_FORMAT_OPTIONS) -o $@.tmp.obo && grep -v ^owl-axioms $@.tmp.obo > $@ && rm $@.tmp.obo
-$(ONT)-simple.json: $(ONT)-simple.owl
-	$(ROBOT) annotate --input $< --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
-		convert --check false -f json -o $@.tmp.json &&\
-	jq -S 'walk(if type == "array" then sort else . end)' $@.tmp.json > $@ && rm $@.tmp.json
-$(ONT)-non-classified.obo: $(ONT)-non-classified.owl
-	$(ROBOT) convert --input $< --check false -f obo $(OBO_FORMAT_OPTIONS) -o $@.tmp.obo && grep -v ^owl-axioms $@.tmp.obo > $@ && rm $@.tmp.obo
-$(ONT)-non-classified.json: $(ONT)-non-classified.owl
-	$(ROBOT) annotate --input $< --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
-		convert --check false -f json -o $@.tmp.json &&\
-	jq -S 'walk(if type == "array" then sort else . end)' $@.tmp.json > $@ && rm $@.tmp.json
-$(ONT)-full.obo: $(ONT)-full.owl
-	$(ROBOT) convert --input $< --check false -f obo $(OBO_FORMAT_OPTIONS) -o $@.tmp.obo && grep -v ^owl-axioms $@.tmp.obo > $@ && rm $@.tmp.obo
-$(ONT)-full.json: $(ONT)-full.owl
-	$(ROBOT) annotate --input $< --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
-		convert --check false -f json -o $@.tmp.json &&\
-	jq -S 'walk(if type == "array" then sort else . end)' $@.tmp.json > $@ && rm $@.tmp.json
 # We always want a base - even if it is not explicitly configured..
 # We always want a full release - even if it is not explicitly configured..
 # ----------------------------------------
@@ -407,12 +376,6 @@ $(ONT).owl: $(ONT)-full.owl
 	$(ROBOT) annotate --input $< --ontology-iri $(URIBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
 		convert -o $@.tmp.owl && mv $@.tmp.owl $@
 
-$(ONT).obo: $(ONT).owl
-	$(ROBOT) convert --input $< --check false -f obo $(OBO_FORMAT_OPTIONS) -o $@.tmp.obo && grep -v ^owl-axioms $@.tmp.obo > $@ && rm $@.tmp.obo
-$(ONT).json: $(ONT)-full.owl
-	$(ROBOT) annotate --input $< --ontology-iri $(URIBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
-		convert --check false -f json -o $@.tmp.json && \
-	jq -S 'walk(if type == "array" then sort else . end)' $@.tmp.json > $@ && rm $@.tmp.json
 # -----------------------------------------------------
 # Release artefacts: variants (base, full, simple, etc)
 # -----------------------------------------------------
@@ -421,10 +384,6 @@ SHARED_ROBOT_COMMANDS =
 $(ONTOLOGYTERMS): $(SRC) $(OTHER_SRC)
 	touch $(ONTOLOGYTERMS) && \
 	$(ROBOT) query --use-graphs true -f csv -i $< --query ../sparql/VFB_drivers_terms.sparql $@
-
-
-
-
 
 
 

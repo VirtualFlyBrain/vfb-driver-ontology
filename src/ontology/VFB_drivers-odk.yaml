@@ -16,8 +16,6 @@ release_artefacts:
 primary_release: full
 export_formats:
   - owl
-  - obo
-  - json
 import_group:
   products:
     - id: so

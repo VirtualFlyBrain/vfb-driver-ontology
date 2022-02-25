@@ -43,8 +43,10 @@ def get_all_drivers(server):
     # splits
     query = ("MATCH (c)-[:SUBCLASSOF]->(iep) WHERE iep.iri = \"%s\" "
              "OPTIONAL MATCH (c)-[r]->(h) WHERE r.iri = \"%s\" "
+             "OPTIONAL MATCH (c)-[x:database_cross_reference]->"
+             "(:Site {short_form:\"FlyLightSplit\"}) "
              "RETURN c.iri, c.label, c.has_exact_synonym, "
-             "c.synonyms, c.description, c.deprecated, "
+             "c.synonyms, x.accession, c.description, c.deprecated, "
              "COLLECT(h.iri)"
              % (iep, hh))
     q = server.commit_list([query])
@@ -125,7 +127,8 @@ template_seed = OrderedDict([('ID' , 'ID'), ('TYPE' , 'TYPE' )])
 #label, description, synonyms:
 template_seed.update([("Name" , "A rdfs:label"), 
                       ("Definition" , "A IAO:0000115"), 
-                      ("Synonyms" , "A oboInOwl:hasExactSynonym SPLIT=|")])
+                      ("Synonyms" , "A oboInOwl:hasExactSynonym SPLIT=|"),
+                      ("Symbol" , "A IAO:0000028")])
 
 # Relationships:
 template_seed.update([("Parent" , "C %"), 
@@ -134,7 +137,7 @@ template_seed.update([("Parent" , "C %"),
 # Create dataFrame for template
 template = pd.DataFrame.from_records([template_seed])
 
-#add row for relationship
+#add row for has_hemidriver relationship
 row_od = OrderedDict([]) #new template row as an empty ordered dictionary
 for c in template.columns: #make columns and blank data for new template row
     row_od.update([(c , "")])
@@ -147,6 +150,20 @@ row_od["Name"] = "has_hemidriver"
 new_row = pd.DataFrame.from_records([row_od])
 template = pd.concat([template, new_row], ignore_index=True, sort=False)
 
+#add row for symbol AP
+row_od = OrderedDict([]) #new template row as an empty ordered dictionary
+for c in template.columns: #make columns and blank data for new template row
+    row_od.update([(c , "")])
+
+row_od["TYPE"] = "owl:AnnotationProperty"
+row_od["ID"] = "http://purl.obolibrary.org/obo/IAO_0000028"
+row_od["Name"] = "symbol"
+
+#make new row into a DataFrame and add it to template
+new_row = pd.DataFrame.from_records([row_od])
+template = pd.concat([template, new_row], ignore_index=True, sort=False)
+
+
 def add_template_rows(template, dataframe, parent_class, hemidrivers=False):
     for i in dataframe.index:
 
@@ -154,11 +171,11 @@ def add_template_rows(template, dataframe, parent_class, hemidrivers=False):
         for c in template.columns: #make columns and blank data for new template row
             row_od.update([(c , "")])
         
-        #these are the same in each row
+        # these are the same in each row
         row_od["TYPE"] = "owl:Class"
         row_od["Parent"] = parent_class
 
-        #easy to generate data
+        # easy to generate data
         row_od["ID"] = i
         row_od["Name"] = dataframe["c.label"][i]
         if "c.description" in dataframe.columns:
@@ -166,7 +183,7 @@ def add_template_rows(template, dataframe, parent_class, hemidrivers=False):
         if hemidrivers:
             row_od["Hemidrivers"] = '|'.join(dataframe["COLLECT(h.iri)"][i])
         
-        #synonyms - if any
+        # synonyms - if any
         esyn = dataframe["c.has_exact_synonym"][i]
         syns = dataframe["c.synonyms"][i]
         if type(esyn)==list and esyn:
@@ -176,7 +193,13 @@ def add_template_rows(template, dataframe, parent_class, hemidrivers=False):
         elif type(syns)==list and syns:
             row_od["Synonyms"] = '|'.join(syns)
         
-        #make new row into a DataFrame and add it to template
+        # Symbol - if any
+        try:
+            row_od["Symbol"] = dataframe["x.accession"][i][0]
+        except:
+            pass
+        
+        # make new row into a DataFrame and add it to template
         new_row = pd.DataFrame.from_records([row_od])
         template = pd.concat([template, new_row], ignore_index=True, sort=False)
         

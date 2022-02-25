@@ -11,7 +11,7 @@ Import(<http://purl.obolibrary.org/obo/VFB_drivers/imports/so_import.owl>)
 Import(<http://purl.obolibrary.org/obo/VFB_drivers/imports/vfbext_import.owl>)
 Annotation(<http://purl.org/dc/elements/1.1/description> "An ontology of Drosophila melanogaster drivers and expression patterns."^^xsd:string)
 Annotation(<http://purl.org/dc/elements/1.1/title> "VFB Driver Ontology"^^xsd:string)
-Annotation(<http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/3.0/"^^xsd:string)
+Annotation(<http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0/"^^xsd:string)
 
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/description>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/title>))

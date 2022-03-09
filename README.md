@@ -1,6 +1,7 @@
 
-![Build Status](https://app.travis-ci.com/VirtualFlyBrain/vfb-driver-ontology.svg?branch=master)
 # VFB Driver Ontology
+
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
 
 Description: An ontology of Drosophila melanogaster drivers and expression patterns.
 
@@ -14,7 +15,7 @@ http://virtualflybrain.org/data/VFB/OWL/vfb_drivers.owl
 
 ### Editors' version
 
-Editors of this ontology should use the edit version, [src/ontology/VFB_drivers-edit.owl](src/ontology/VFB_drivers-edit.owl)
+Do not manually edit this ontology. The edit version, [src/ontology/VFB_drivers-edit.owl](src/ontology/VFB_drivers-edit.owl) is automatically updated each time the release process is run.
 
 ## Contact
 

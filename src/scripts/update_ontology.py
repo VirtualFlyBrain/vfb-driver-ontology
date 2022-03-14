@@ -12,8 +12,8 @@ from collections import OrderedDict
 # KB does not have all synonyms in PDB
 # KB could have some classes maked as obsolete that are not obsolete in PDB
 
-kb = Neo4jConnect('http://kb.p2.virtualflybrain.org', 'neo4j', 'neo4j')
-pdb = Neo4jConnect('http://pdb.v4.virtualflybrain.org', 'neo4j', 'neo4j')
+kb = Neo4jConnect('http://kb.virtualflybrain.org', 'neo4j', 'neo4j')
+pdb = Neo4jConnect('http://pdb.virtualflybrain.org', 'neo4j', 'neo4j')
 
 def get_all_drivers(server):
     """

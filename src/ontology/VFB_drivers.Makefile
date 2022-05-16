@@ -1,8 +1,13 @@
 ## Customize Makefile settings for VFB_drivers
-## 
+##
 ## If you need to customize your Makefile, make
 ## changes here rather than in the main Makefile
 
+.PHONY: prepare_release
+prepare_release: all reports/robot_diff.txt
+	rsync -R $(RELEASE_ASSETS) $(RELEASEDIR) &&\
+	rm -f $(CLEANFILES) &&\
+	echo "Release files are now in $(RELEASEDIR) - now you should commit, push and make a release on your git hosting site such as GitHub or GitLab"
 
 update_ontology:
 	python3 -m pip install -r ../scripts/requirements.txt && \
@@ -20,3 +25,10 @@ $(ONT).owl: $(ONT)-full.owl
 	$(ROBOT) annotate -i $@.tmp.owl --ontology-iri http://virtualflybrain.org/data/VFB/OWL/vfb_drivers.owl \
 		convert -o $@.tmp.owl && mv $@.tmp.owl $@
 
+LATEST_RELEASE = http://raw.githubusercontent.com/VirtualFlyBrain/vfb-driver-ontology/master/VFB_drivers.owl
+
+tmp/last_released_vfb_drivers.owl:
+	wget -O $@ $(LATEST_RELEASE)
+
+reports/robot_diff.txt: tmp/last_released_vfb_drivers.owl $(ONT).owl
+	$(ROBOT) diff --left $< --right $(ONT).owl --output $@

@@ -2,13 +2,14 @@ id: VFB_drivers
 title: "VFB Driver Ontology"
 github_org: VirtualFlyBrain
 repo: vfb-driver-ontology
-report_fail_on: none
+robot_report:
+  custom_profile: TRUE
 use_dosdps: FALSE
 dosdp_tools_options: "--obo-prefixes=true --restrict-axioms-to=logical"
 namespaces: 
   - http://virtualflybrain.org/reports/VFBexp_
   - http://flybase.org/reports/
-release_artefacts: 
+release_artefacts:
   - base
   - simple
   - non-classified

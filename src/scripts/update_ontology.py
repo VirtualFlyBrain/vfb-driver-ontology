@@ -18,14 +18,14 @@ pdb = Neo4jConnect('http://pdb.virtualflybrain.org', 'neo4j', 'neo4j')
 def get_all_drivers(server):
     """
     Input is a Neo4jConnect object corresponding to a VFB server.
-    Output is three dataframes: 
+    Output is three dataframes:
       [0] :Split classes
       [1] hemidrivers that comprise the :Split classes
       [2] 'FBti' and 'FBtp' classes
     """
     iep = "http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010"
     hh = "http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"
-    
+
     def synonym_fix(x):
         """Fixes oddly-formatted synonyms."""
         if type(x) == list and len(x) > 0:
@@ -39,7 +39,7 @@ def get_all_drivers(server):
                 return x
         else:
             return x
-            
+
     # splits
     query = ("MATCH (c)-[:SUBCLASSOF]->(iep) WHERE iep.iri = \"%s\" "
              "OPTIONAL MATCH (c)-[r]->(h) WHERE r.iri = \"%s\" "
@@ -55,7 +55,7 @@ def get_all_drivers(server):
     splits_df.set_index('c.iri', inplace=True)
     splits_df['c.has_exact_synonym'] = splits_df['c.has_exact_synonym'].apply(synonym_fix)
     splits_df['c.synonyms'] = splits_df['c.synonyms'].apply(synonym_fix)
-    
+
     # hemidrivers
     query = ("MATCH (c)<-[r]-(s)-[:SUBCLASSOF]->(iep) WHERE iep.iri = \"%s\" "
              "AND r.iri = \"%s\" "
@@ -68,7 +68,7 @@ def get_all_drivers(server):
     hemidrivers_df.set_index('c.iri', inplace=True)
     hemidrivers_df['c.has_exact_synonym'] = hemidrivers_df['c.has_exact_synonym'].apply(synonym_fix)
     hemidrivers_df['c.synonyms'] = hemidrivers_df['c.synonyms'].apply(synonym_fix)
-    
+
     # features
     query = ("MATCH (c:Feature) WHERE c.iri CONTAINS \"FBti\" "
              "RETURN DISTINCT c.iri, c.label, c.synonyms, "
@@ -89,7 +89,7 @@ def get_all_drivers(server):
     features_df.set_index('c.iri', inplace=True)
     features_df['c.has_exact_synonym'] = features_df['c.has_exact_synonym'].apply(synonym_fix)
     features_df['c.synonyms'] = features_df['c.synonyms'].apply(synonym_fix)
-    
+
     return splits_df, hemidrivers_df, features_df
 
 KB_drivers = get_all_drivers(kb)
@@ -99,10 +99,10 @@ def update_old_driver_df(df_old, df_new, obs_col):
     """Add rows of new_df to old_df, then remove obsoletes in obs_col.
     IDs should be indices of dfs."""
     df_old.update(df_new, overwrite=False) # update PDB NAs with KB values
-    
+
     to_add = df_new[~df_new.index.isin(df_old.index)]
     df_updated = pd.concat([df_old, to_add])
-    
+
     # obs_col will either be NA or list of boolean(s)
     def process_obs_col(x):
         if type(x)==list:
@@ -112,11 +112,11 @@ def update_old_driver_df(df_old, df_new, obs_col):
                 return False
         else:
             return False
-        
+
     df_updated[obs_col] = df_updated[obs_col].apply(process_obs_col)
     df_updated_no_obsoletes = df_updated[df_updated[obs_col]==False]
     return df_updated_no_obsoletes
-    
+
 splits_df_combined = update_old_driver_df(PDB_drivers[0], KB_drivers[0], 'c.deprecated')
 hemidrivers_df_combined = update_old_driver_df(PDB_drivers[1], KB_drivers[1], 'c.deprecated')
 features_df_combined = update_old_driver_df(PDB_drivers[2], KB_drivers[2], 'c.deprecated')
@@ -125,13 +125,13 @@ features_df_combined = update_old_driver_df(PDB_drivers[2], KB_drivers[2], 'c.de
 template_seed = OrderedDict([('ID' , 'ID'), ('TYPE' , 'TYPE' )])
 
 #label, description, synonyms:
-template_seed.update([("Name" , "A rdfs:label"), 
-                      ("Definition" , "A IAO:0000115"), 
+template_seed.update([("Name" , "A rdfs:label"),
+                      ("Definition" , "A IAO:0000115"),
                       ("Synonyms" , "A oboInOwl:hasExactSynonym SPLIT=|"),
                       ("Symbol" , "A IAO:0000028")])
 
 # Relationships:
-template_seed.update([("Parent" , "C %"), 
+template_seed.update([("Parent" , "C %"),
                       ("Hemidrivers" , "C has_hemidriver some % SPLIT=|")])
 
 # Create dataFrame for template
@@ -164,49 +164,56 @@ new_row = pd.DataFrame.from_records([row_od])
 template = pd.concat([template, new_row], ignore_index=True, sort=False)
 
 
-def add_template_rows(template, dataframe, parent_class, hemidrivers=False):
+def add_template_rows(template, data, dataframe, parent_class, hemidrivers=False):
+    problems = []
     for i in dataframe.index:
-
-        row_od = OrderedDict([]) #new template row as an empty ordered dictionary
-        for c in template.columns: #make columns and blank data for new template row
-            row_od.update([(c , "")])
-        
-        # these are the same in each row
-        row_od["TYPE"] = "owl:Class"
-        row_od["Parent"] = parent_class
-
-        # easy to generate data
-        row_od["ID"] = i
-        row_od["Name"] = dataframe["c.label"][i]
-        if "c.description" in dataframe.columns:
-            row_od["Definition"] = dataframe["c.description"][i][0]
-        if hemidrivers:
-            row_od["Hemidrivers"] = '|'.join(dataframe["COLLECT(h.iri)"][i])
-        
-        # synonyms - if any
-        esyn = dataframe["c.has_exact_synonym"][i]
-        syns = dataframe["c.synonyms"][i]
-        if type(esyn)==list and esyn:
-            row_od["Synonyms"] = '|'.join(esyn)
-            if type(syns)==list and syns:
-                row_od["Synonyms"] += '|' + '|'.join(syns)
-        elif type(syns)==list and syns:
-            row_od["Synonyms"] = '|'.join(syns)
-        
-        # Symbol - if any
         try:
-            row_od["Symbol"] = dataframe["x.accession"][i][0]
+            row_od = OrderedDict([]) #new template row as an empty ordered dictionary
+            for c in template.columns: #make columns and blank data for new template row
+                row_od.update([(c , "")])
+
+            # these are the same in each row
+            row_od["TYPE"] = "owl:Class"
+            row_od["Parent"] = parent_class
+
+            # easy to generate data
+            row_od["ID"] = i
+            row_od["Name"] = dataframe["c.label"][i]
+            if "c.description" in dataframe.columns:
+                row_od["Definition"] = dataframe["c.description"][i][0]
+            if hemidrivers:
+                row_od["Hemidrivers"] = '|'.join(dataframe["COLLECT(h.iri)"][i])
+
+            # synonyms - if any
+            esyn = dataframe["c.has_exact_synonym"][i]
+            syns = dataframe["c.synonyms"][i]
+            if type(esyn)==list and esyn:
+                row_od["Synonyms"] = '|'.join(esyn)
+                if type(syns)==list and syns:
+                    row_od["Synonyms"] += '|' + '|'.join(syns)
+            elif type(syns)==list and syns:
+                row_od["Synonyms"] = '|'.join(syns)
+
+            # Symbol - if any
+            try:
+                row_od["Symbol"] = dataframe["x.accession"][i][0]
+            except:
+                pass
+
+            # make new row into a DataFrame and add it to template
+            new_row = pd.DataFrame.from_records([row_od])
+            template = pd.concat([template, new_row], ignore_index=True, sort=False)
         except:
-            pass
-        
-        # make new row into a DataFrame and add it to template
-        new_row = pd.DataFrame.from_records([row_od])
-        template = pd.concat([template, new_row], ignore_index=True, sort=False)
-        
+            print("WARNING could not create template row for %s" % i)
+            problems.append(i)
+    if problems:
+        print("WARNING %s classes could not be created for %s." % (len(set(problems)), data))
+    else:
+        print("All classes created successfully for %s." % data)
     return template
-        
-template = add_template_rows(template, splits_df_combined, 'http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010', True)
-template = add_template_rows(template, hemidrivers_df_combined, 'http://purl.obolibrary.org/obo/SO_0000110', False)
-template = add_template_rows(template, features_df_combined, 'http://purl.obolibrary.org/obo/SO_0000110', False)
+
+template = add_template_rows(template, 'splits', splits_df_combined, 'http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010', True)
+template = add_template_rows(template, 'hemidrivers', hemidrivers_df_combined, 'http://purl.obolibrary.org/obo/SO_0000110', False)
+template = add_template_rows(template, 'features', features_df_combined, 'http://purl.obolibrary.org/obo/SO_0000110', False)
 
 template.to_csv('template.tsv', sep='\t', index=False)

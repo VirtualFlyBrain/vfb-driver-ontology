@@ -164,7 +164,8 @@ new_row = pd.DataFrame.from_records([row_od])
 template = pd.concat([template, new_row], ignore_index=True, sort=False)
 
 
-def add_template_rows(template, data, dataframe, parent_class, hemidrivers=False):
+def add_template_rows(template, data_name, dataframe, parent_class, hemidrivers=False):
+    """Makes new template rows from given dataframe and adds them to the given template."""
     problems = []
     for i in dataframe.index:
         try:
@@ -207,13 +208,19 @@ def add_template_rows(template, data, dataframe, parent_class, hemidrivers=False
             print("WARNING could not create template row for %s" % i)
             problems.append(i)
     if problems:
-        print("WARNING %s classes could not be created for %s." % (len(set(problems)), data))
+        print("WARNING %s classes could not be created for %s." % (len(set(problems)), data_name))
     else:
-        print("All classes created successfully for %s." % data)
-    return template
+        print("All classes created successfully for %s." % data_name)
+    return (template, problems)
 
 template = add_template_rows(template, 'splits', splits_df_combined, 'http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010', True)
-template = add_template_rows(template, 'hemidrivers', hemidrivers_df_combined, 'http://purl.obolibrary.org/obo/SO_0000110', False)
-template = add_template_rows(template, 'features', features_df_combined, 'http://purl.obolibrary.org/obo/SO_0000110', False)
+error_log = template[1]
+template = add_template_rows(template[0], 'hemidrivers', hemidrivers_df_combined, 'http://purl.obolibrary.org/obo/SO_0000110', False)
+error_log += template[1]
+template = add_template_rows(template[0], 'features', features_df_combined, 'http://purl.obolibrary.org/obo/SO_0000110', False)
+error_log += template[1]
 
-template.to_csv('template.tsv', sep='\t', index=False)
+if error_log:
+    raise SystemExit("Problems creating template rows from data.")
+else:
+    template[0].to_csv('template.tsv', sep='\t', index=False)

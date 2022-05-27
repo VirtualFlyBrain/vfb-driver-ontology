@@ -11,8 +11,7 @@ src/ontology/mirror
 src/ontology/mirror/*
 src/ontology/reports/*
 src/ontology/VFB_drivers.owl
-src/ontology/VFB_drivers.obo
-src/ontology/VFB_drivers.json
+src/ontology/VFB_drivers-cedar.*
 src/ontology/VFB_drivers-base.*
 src/ontology/VFB_drivers-basic.*
 src/ontology/VFB_drivers-full.*

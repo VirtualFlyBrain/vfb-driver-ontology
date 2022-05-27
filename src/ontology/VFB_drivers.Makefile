@@ -6,8 +6,10 @@
 .PHONY: prepare_release
 prepare_release: all $(ONT)-cedar.owl reports/robot_diff.txt
 	rsync -R $(RELEASE_ASSETS) $(ONT)-cedar.owl $(RELEASEDIR) &&\
-	rm -f $(CLEANFILES) $(ONT)-cedar.owl &&\
+	rm -f $(CLEANFILES) &&\
 	echo "Release files are now in $(RELEASEDIR) - now you should commit, push and make a release on your git hosting site such as GitHub or GitLab"
+
+CLEANFILES:=$(CLEANFILES) $(ONT)-cedar.owl $(patsubst %, $(IMPORTDIR)/%_terms_combined.txt, $(IMPORTS))
 
 update_ontology:
 	python3 -m pip install -r ../scripts/requirements.txt && \

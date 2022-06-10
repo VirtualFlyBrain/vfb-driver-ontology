@@ -3,6 +3,7 @@ Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
 Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
 Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
 Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(FBcv:=<http://purl.obolibrary.org/obo/FBcv_>)
 Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
@@ -13,8 +14,20 @@ Annotation(<http://purl.org/dc/elements/1.1/description> "An ontology of Drosoph
 Annotation(<http://purl.org/dc/elements/1.1/title> "VFB Driver Ontology"^^xsd:string)
 Annotation(<http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0/"^^xsd:string)
 
+Declaration(Class(<http://purl.obolibrary.org/obo/FBcv_0005051>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/description>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/title>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/license>))
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://purl.obolibrary.org/obo/FBcv_0005051> (split system component)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBcv_0005051> "split system component")
+SubClassOf(<http://purl.obolibrary.org/obo/FBcv_0005051> <http://purl.obolibrary.org/obo/SO_0000110>)
+
 
 )

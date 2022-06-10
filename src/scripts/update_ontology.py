@@ -13,7 +13,7 @@ from collections import OrderedDict
 # KB could have some classes maked as obsolete that are not obsolete in PDB
 
 kb = Neo4jConnect('http://kb.virtualflybrain.org', 'neo4j', 'neo4j')
-pdb = Neo4jConnect('http://pdb-dev.virtualflybrain.org', 'neo4j', 'neo4j')
+pdb = Neo4jConnect('http://pdb.virtualflybrain.org', 'neo4j', 'neo4j')
 
 def get_all_drivers(server):
     """
@@ -215,7 +215,7 @@ def add_template_rows(template, data_name, dataframe, parent_class, hemidrivers=
 
 template = add_template_rows(template, 'splits', splits_df_combined, 'http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010', True)
 error_log = template[1]
-template = add_template_rows(template[0], 'hemidrivers', hemidrivers_df_combined, 'http://purl.obolibrary.org/obo/SO_0000110', False)
+template = add_template_rows(template[0], 'hemidrivers', hemidrivers_df_combined, 'http://purl.obolibrary.org/obo/FBcv_0005051', False)
 error_log += template[1]
 template = add_template_rows(template[0], 'features', features_df_combined, 'http://purl.obolibrary.org/obo/SO_0000110', False)
 error_log += template[1]

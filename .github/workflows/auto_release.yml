@@ -19,6 +19,9 @@ jobs:
       env:
         DEFAULT_BRANCH: master
       run: cd src/ontology && make ROBOT_ENV='ROBOT_JAVA_ARGS=-Xmx6G' update_ontology -B && make ROBOT_ENV='ROBOT_JAVA_ARGS=-Xmx6G' prepare_release -B
+    
+    - name: Fix repo ownership issue
+      run: git config --global --add safe.directory /__w/vfb-driver-ontology/vfb-driver-ontology
 
     - name: Commit changes
       uses: EndBug/add-and-commit@v9

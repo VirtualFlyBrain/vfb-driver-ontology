@@ -10,7 +10,7 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 Ontology(<http://virtualflybrain.org/data/VFB/OWL/vfb_drivers.owl>
 Import(<http://purl.obolibrary.org/obo/VFB_drivers/imports/so_import.owl>)
 Import(<http://purl.obolibrary.org/obo/VFB_drivers/imports/vfbext_import.owl>)
-Annotation(<http://purl.org/dc/elements/1.1/description> "An ontology of Drosophila melanogaster drivers and expression patterns."^^xsd:string)
+Annotation(<http://purl.org/dc/elements/1.1/description> "An ontology of Drosophila melanogaster drivers and expression patterns. Split expression pattern classes are taken from Virtual Fly Brain, where these were created and linked to FlyBase terms for hemidrivers. Hemidriver classes are created using data taken directly from FlyBase. Other driver classes are retrieved from Virtual Fly Brain, which creates these using data from FlyBase."^^xsd:string)
 Annotation(<http://purl.org/dc/elements/1.1/title> "VFB Driver Ontology"^^xsd:string)
 Annotation(<http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0/"^^xsd:string)
 

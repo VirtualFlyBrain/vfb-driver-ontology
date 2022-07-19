@@ -30,7 +30,7 @@ hemidrivers = hemidrivers[hemidrivers['c.iri'].str.contains('FBtp')|hemidrivers[
 hemidrivers['c.iri'] = hemidrivers['c.iri'].apply(lambda x: 'http://flybase.org/reports/' + x)
 hemidrivers = hemidrivers.groupby(['c.iri']).agg(lambda x: '|'.join(x))
 
-def get_all_drivers(server):
+def get_all_drivers(server, hemidrivers_df=hemidrivers):
     """
     Input is a Neo4jConnect object corresponding to a VFB server.
     Output is two dataframes:

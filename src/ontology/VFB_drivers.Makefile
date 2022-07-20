@@ -24,19 +24,19 @@ update_ontology: get_FB_hemidrivers
 	python3 ../scripts/update_ontology.py &&\
 	$(ROBOT) template \
 	--template properties_template.tsv \
-	--output ./tmp/VFB_drivers-properties-tmp.owl &&\
+	--output $(TMPDIR)/VFB_drivers-properties-tmp.owl &&\
 	$(ROBOT) template \
-	--input ./tmp/VFB_drivers-properties-tmp.owl \
+	--input $(TMPDIR)/VFB_drivers-properties-tmp.owl \
 	--template template.tsv \
-	--output ./tmp/VFB_drivers-classes-tmp.owl &&\
+	--output $(TMPDIR)/VFB_drivers-classes-tmp.owl &&\
 	$(ROBOT) merge \
 	--input VFB_drivers-annotations.ofn \
-	--input ./tmp/VFB_drivers-properties-tmp.owl \
-	--input ./tmp/VFB_drivers-classes-tmp.owl \
+	--input $(TMPDIR)/VFB_drivers-properties-tmp.owl \
+	--input $(TMPDIR)/VFB_drivers-classes-tmp.owl \
 	--include-annotations true --collapse-import-closure false \
 	--output VFB_drivers-edit.owl &&\
-	echo "\nOntology source file updated!\n" &&\
-	rm template.tsv properties_template.tsv ./tmp/VFB_drivers-properties-tmp.owl ./tmp/VFB_drivers-classes-tmp.owl
+	echo "\nOntology source file updated!\n"
+	rm template.tsv properties_template.tsv $(TMPDIR)/VFB_drivers-properties-tmp.owl $(TMPDIR)/VFB_drivers-classes-tmp.owl
 
 $(ONT).owl: $(ONT)-full.owl
 	grep -v owl:versionIRI $< > $@.tmp.owl
@@ -45,10 +45,10 @@ $(ONT).owl: $(ONT)-full.owl
 
 LATEST_RELEASE = http://raw.githubusercontent.com/VirtualFlyBrain/vfb-driver-ontology/master/VFB_drivers.owl
 
-tmp/last_released_vfb_drivers.owl:
+$(TMPDIR)/last_released_vfb_drivers.owl:
 	wget -O $@ $(LATEST_RELEASE)
 
-reports/robot_diff.txt: tmp/last_released_vfb_drivers.owl $(ONT).owl
+reports/robot_diff.txt: $(TMPDIR)/last_released_vfb_drivers.owl $(ONT).owl
 	$(ROBOT) diff --left $< --right $(ONT).owl --output $@
 
 $(ONT)-cedar.owl: $(ONT).owl

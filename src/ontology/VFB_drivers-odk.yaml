@@ -21,6 +21,7 @@ import_group:
   products:
     - id: so
       module_type: minimal
+    - id: FBcv
     - id: vfbext
       mirror_from: 'https://raw.githubusercontent.com/VirtualFlyBrain/vfb-extension-ontology/master/vfbext.owl'
       module_type: slme

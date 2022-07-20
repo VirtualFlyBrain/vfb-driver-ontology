@@ -3,31 +3,20 @@ Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
 Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
 Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
 Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
-Prefix(FBcv:=<http://purl.obolibrary.org/obo/FBcv_>)
 Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://virtualflybrain.org/data/VFB/OWL/vfb_drivers.owl>
+Import(<http://purl.obolibrary.org/obo/VFB_drivers/imports/FBcv_import.owl>)
 Import(<http://purl.obolibrary.org/obo/VFB_drivers/imports/so_import.owl>)
 Import(<http://purl.obolibrary.org/obo/VFB_drivers/imports/vfbext_import.owl>)
-Annotation(<http://purl.org/dc/elements/1.1/description> "An ontology of Drosophila melanogaster drivers and expression patterns."^^xsd:string)
+Annotation(<http://purl.org/dc/elements/1.1/description> "An ontology of Drosophila melanogaster drivers and expression patterns. Split expression pattern classes are taken from Virtual Fly Brain, where these were created and linked to FlyBase terms for hemidrivers. Hemidriver classes are created using data taken directly from FlyBase. Other driver classes are retrieved from Virtual Fly Brain, which creates these using data from FlyBase."^^xsd:string)
 Annotation(<http://purl.org/dc/elements/1.1/title> "VFB Driver Ontology"^^xsd:string)
+Annotation(<http://purl.org/dc/terms/contributor> "http://orcid.org/0000-0002-1373-1705")
 Annotation(<http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0/"^^xsd:string)
 
-Declaration(Class(<http://purl.obolibrary.org/obo/FBcv_0005051>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/description>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/title>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/license>))
-
-
-############################
-#   Classes
-############################
-
-# Class: <http://purl.obolibrary.org/obo/FBcv_0005051> (split system component)
-
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBcv_0005051> "split system component")
-SubClassOf(<http://purl.obolibrary.org/obo/FBcv_0005051> <http://purl.obolibrary.org/obo/SO_0000110>)
-
 
 )

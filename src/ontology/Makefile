@@ -98,7 +98,7 @@ all_main: $(MAIN_FILES)
 # ----------------------------------------
 
 
-IMPORTS =  so vfbext
+IMPORTS =  so FBcv vfbext
 
 IMPORT_ROOTS = $(patsubst %, $(IMPORTDIR)/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
@@ -328,6 +328,15 @@ IMP_LARGE=true # Global parameter to bypass handling of large imports
 mirror-so: | $(TMPDIR)
 	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(URIBASE)/so.owl --create-dirs -o $(MIRRORDIR)/so.owl --retry 4 --max-time 200 &&\
 		$(ROBOT) convert -i $(MIRRORDIR)/so.owl -o $@.tmp.owl &&\
+		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
+
+
+## ONTOLOGY: FBcv
+.PHONY: mirror-FBcv
+.PRECIOUS: $(MIRRORDIR)/FBcv.owl
+mirror-FBcv: | $(TMPDIR)
+	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(URIBASE)/FBcv.owl --create-dirs -o $(MIRRORDIR)/FBcv.owl --retry 4 --max-time 200 &&\
+		$(ROBOT) convert -i $(MIRRORDIR)/FBcv.owl -o $@.tmp.owl &&\
 		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
 
 

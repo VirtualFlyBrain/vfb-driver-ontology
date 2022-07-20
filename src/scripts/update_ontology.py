@@ -197,7 +197,7 @@ def add_template_rows(template, data_name, dataframe, parent_class):
             row_od["TYPE"] = "owl:Class"
             row_od["Name"] = dataframe["c.label"][i]
             if data_name=='hemidrivers':
-                row_od["Parent"] = dataframe["tool_fbcv"][i]
+                row_od["Parent"] = dataframe["tool_fbcv"][i] + "|http://purl.obolibrary.org/obo/SO_0000110"
             else:
                 row_od["Parent"] = parent_class
             if "c.description" in dataframe.columns:

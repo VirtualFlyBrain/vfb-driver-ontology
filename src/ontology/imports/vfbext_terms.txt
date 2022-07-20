@@ -1,1 +1,2 @@
-
+http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010
+http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008

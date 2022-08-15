@@ -17,9 +17,9 @@
      xmlns:subsets="http://purl.obolibrary.org/obo/ro/subsets#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/VFB_drivers/imports/FBcv_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/VFB_drivers/releases/2022-08-08/imports/FBcv_import.owl"/>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/fbcv/releases/2022-06-09/fbcv.owl"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-08-08</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/VFB_drivers/releases/2022-08-15/imports/FBcv_import.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/fbcv/releases/2022-08-11/fbcv.owl"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-08-15</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -290,6 +290,12 @@ We also have the outstanding issue of how to aim different definitions to differ
     <!-- http://purl.org/dc/terms/creator -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/date -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/date"/>
     
 
 
@@ -2430,8 +2436,8 @@ For example, A and B may be gene products and binding of B by A positively regul
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0005001">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0000013"/>
         <obo:IAO_0000115>Term that describes the use of an experimental tool.</obo:IAO_0000115>
-        <oboInOwl:created_by>temj2</oboInOwl:created_by>
-        <oboInOwl:creation_date>2017-06-28T11:41:27Z</oboInOwl:creation_date>
+        <terms:contributor rdf:resource="http://orcid.org/0000-0002-0027-0858"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-06-28T11:41:27Z</terms:date>
         <oboInOwl:hasOBONamespace>FlyBase miscellaneous CV</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBcv:0005001</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbcv#do_not_annotate"/>
@@ -2451,8 +2457,8 @@ For example, A and B may be gene products and binding of B by A positively regul
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0005051">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0005001"/>
         <obo:IAO_0000115>Component that forms part of a &apos;split system&apos;. A split system component corresponds to a non-functional fragment of a functional experimental tool that would normally be encoded by a single gene product. When combined with another appropriate split system component in vivo, a functional experimental tool is produced. The fragments of a split system can be brought together in vivo in a number of different ways; for example, by fusing fragments to peptides that physically interact in vivo.</obo:IAO_0000115>
-        <oboInOwl:created_by>temj2</oboInOwl:created_by>
-        <oboInOwl:creation_date>2017-06-28T11:41:27Z</oboInOwl:creation_date>
+        <terms:contributor rdf:resource="http://orcid.org/0000-0002-0027-0858"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-06-28T11:41:27Z</terms:date>
         <oboInOwl:hasOBONamespace>experimental_tool_descriptor</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBcv:0005051</oboInOwl:id>
         <rdfs:label>split system component</rdfs:label>
@@ -2471,8 +2477,8 @@ For example, A and B may be gene products and binding of B by A positively regul
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0005054">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0005051"/>
         <obo:IAO_0000115>Sequence encoding a site-specific DNA-binding domain fused to a heterodimerization domain. A functional transcription driver can be reconstituted if this split system component is brought together in vivo with a split system component that encodes a transcription activation domain fused to the complementary heterodimerization domain.</obo:IAO_0000115>
-        <oboInOwl:created_by>temj2</oboInOwl:created_by>
-        <oboInOwl:creation_date>2017-06-28T11:41:27Z</oboInOwl:creation_date>
+        <terms:contributor rdf:resource="http://orcid.org/0000-0002-0027-0858"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-06-28T11:41:27Z</terms:date>
         <oboInOwl:hasOBONamespace>experimental_tool_descriptor</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBcv:0005054</oboInOwl:id>
         <rdfs:label>split driver - DNA-binding fragment</rdfs:label>
@@ -2492,8 +2498,8 @@ For example, A and B may be gene products and binding of B by A positively regul
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0005055">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0005051"/>
         <obo:IAO_0000115>Sequence encoding a transcription activation domain fused to a heterodimerization domain. A functional transcription driver can be reconstituted if this split system component is brought together in vivo with a split system component that encodes a DNA-binding domain fused to the complementary heterodimerization domain.</obo:IAO_0000115>
-        <oboInOwl:created_by>temj2</oboInOwl:created_by>
-        <oboInOwl:creation_date>2017-06-28T11:41:27Z</oboInOwl:creation_date>
+        <terms:contributor rdf:resource="http://orcid.org/0000-0002-0027-0858"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-06-28T11:41:27Z</terms:date>
         <oboInOwl:hasOBONamespace>experimental_tool_descriptor</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBcv:0005055</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbcv#common_tool_use"/>

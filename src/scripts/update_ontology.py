@@ -13,7 +13,7 @@ from collections import OrderedDict
 # KB could have some classes maked as obsolete that are not obsolete in PDB
 
 kb = Neo4jConnect('http://kb.virtualflybrain.org', 'neo4j', 'vfb')
-pdb = Neo4jConnect('http://pdb.virtualflybrain.org', 'neo4j', 'vfb')
+pdb = Neo4jConnect('http://pdb-dev.virtualflybrain.org', 'neo4j', 'vfb')
 hemidrivers_file="tmp/hemidrivers.tsv"
 
 # process hemidriver file to keep just FBti and FBtp and format to match other files:

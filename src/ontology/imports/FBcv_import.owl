@@ -17,9 +17,9 @@
      xmlns:subsets="http://purl.obolibrary.org/obo/ro/subsets#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/VFB_drivers/imports/FBcv_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/VFB_drivers/releases/2022-08-15/imports/FBcv_import.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/VFB_drivers/releases/2022-08-22/imports/FBcv_import.owl"/>
         <dc:source rdf:resource="http://purl.obolibrary.org/obo/fbcv/releases/2022-08-11/fbcv.owl"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-08-15</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-08-22</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -2511,6 +2511,126 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>Sequence encoding a transcription activation domain fused to a heterodimerization domain. A functional transcription driver can be reconstituted if this split system component is brought together in vivo with a split system component that encodes a DNA-binding domain fused to the complementary heterodimerization domain.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:GM</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0193617</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBcv_0007053 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0007053">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0005055"/>
+        <obo:IAO_0000115>Sequence encoding a transcription activation domain fused to a heterodimerization domain, where the process of heterodimerization mediated by this domain can be regulated by a particular stimulus. A functional transcription driver can be reconstituted in vivo if this split system component is brought together with a split system component that encodes a DNA-binding domain fused to the complementary heterodimerization domain and the appropriate stimulus is applied.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="http://orcid.org/0000-0002-1373-1705"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-05-04T14:32:02Z</terms:date>
+        <oboInOwl:hasOBONamespace>experimental_tool_descriptor</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBcv:0007053</oboInOwl:id>
+        <rdfs:label>conditional split driver - transcription activation fragment</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBcv_0007053"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Sequence encoding a transcription activation domain fused to a heterodimerization domain, where the process of heterodimerization mediated by this domain can be regulated by a particular stimulus. A functional transcription driver can be reconstituted in vivo if this split system component is brought together with a split system component that encodes a DNA-binding domain fused to the complementary heterodimerization domain and the appropriate stimulus is applied.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:GM</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBcv_0007054 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0007054">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0007053"/>
+        <obo:IAO_0000115>Sequence encoding a transcription activation domain fused to a heterodimerization domain, where the process of heterodimerization mediated by this domain can be regulated by irradiation with a pulse of light. A functional transcription driver can be reconstituted in vivo if this split system component is brought together with a split system component that encodes a DNA-binding domain fused to the complementary heterodimerization domain and the appropriate light stimulus is applied.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="http://orcid.org/0000-0002-1373-1705"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-05-04T14:33:41Z</terms:date>
+        <oboInOwl:hasOBONamespace>experimental_tool_descriptor</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBcv:0007054</oboInOwl:id>
+        <rdfs:label>light-regulated split driver - transcription activation fragment</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBcv_0007054"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Sequence encoding a transcription activation domain fused to a heterodimerization domain, where the process of heterodimerization mediated by this domain can be regulated by irradiation with a pulse of light. A functional transcription driver can be reconstituted in vivo if this split system component is brought together with a split system component that encodes a DNA-binding domain fused to the complementary heterodimerization domain and the appropriate light stimulus is applied.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:GM</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBcv_0007055 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0007055">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0007053"/>
+        <obo:IAO_0000115>Sequence encoding a transcription activation domain fused to a heterodimerization domain, where the process of heterodimerization mediated by this domain can be regulated by binding to a small molecule, such as an ion or ligand. A functional transcription driver can be reconstituted in vivo if this split system component is brought together with a split system component that encodes a DNA-binding domain fused to the complementary heterodimerization domain and the appropriate small molecule stimulus is applied.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="http://orcid.org/0000-0002-1373-1705"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-05-04T14:34:38Z</terms:date>
+        <oboInOwl:hasOBONamespace>experimental_tool_descriptor</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBcv:0007055</oboInOwl:id>
+        <rdfs:label>small molecule-regulated split driver - transcription activation fragment</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBcv_0007055"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Sequence encoding a transcription activation domain fused to a heterodimerization domain, where the process of heterodimerization mediated by this domain can be regulated by binding to a small molecule, such as an ion or ligand. A functional transcription driver can be reconstituted in vivo if this split system component is brought together with a split system component that encodes a DNA-binding domain fused to the complementary heterodimerization domain and the appropriate small molecule stimulus is applied.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:GM</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBcv_0007056 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0007056">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0005054"/>
+        <obo:IAO_0000115>Sequence encoding a site-specific DNA-binding domain fused to a heterodimerization domain, where the process of heterodimerization mediated by this domain can be regulated by a particular stimulus. A functional transcription driver can be reconstituted in vivo if this split system component is brought together with a split system component that encodes a transcription activation domain fused to the complementary heterodimerization domain and the appropriate stimulus is applied.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="http://orcid.org/0000-0002-1373-1705"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-05-04T14:35:30Z</terms:date>
+        <oboInOwl:hasOBONamespace>experimental_tool_descriptor</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBcv:0007056</oboInOwl:id>
+        <rdfs:label>conditional split driver - DNA-binding fragment</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBcv_0007056"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Sequence encoding a site-specific DNA-binding domain fused to a heterodimerization domain, where the process of heterodimerization mediated by this domain can be regulated by a particular stimulus. A functional transcription driver can be reconstituted in vivo if this split system component is brought together with a split system component that encodes a transcription activation domain fused to the complementary heterodimerization domain and the appropriate stimulus is applied.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:GM</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBcv_0007057 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0007057">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0007056"/>
+        <obo:IAO_0000115>Sequence encoding a site-specific DNA-binding domain fused to a heterodimerization domain, where the process of heterodimerization mediated by this domain can be regulated by irradiation with a pulse of light. A functional transcription driver can be reconstituted in vivo if this split system component is brought together with a split system component that encodes a transcription activation domain fused to the complementary heterodimerization domain and the appropriate light stimulus is applied.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="http://orcid.org/0000-0002-1373-1705"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-05-04T14:37:56Z</terms:date>
+        <oboInOwl:hasOBONamespace>experimental_tool_descriptor</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBcv:0007057</oboInOwl:id>
+        <rdfs:label>light-regulated split driver - DNA-binding fragment</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBcv_0007057"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Sequence encoding a site-specific DNA-binding domain fused to a heterodimerization domain, where the process of heterodimerization mediated by this domain can be regulated by irradiation with a pulse of light. A functional transcription driver can be reconstituted in vivo if this split system component is brought together with a split system component that encodes a transcription activation domain fused to the complementary heterodimerization domain and the appropriate light stimulus is applied.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:GM</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBcv_0007058 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0007058">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0007056"/>
+        <obo:IAO_0000115>Sequence encoding a site-specific DNA-binding domain fused to a heterodimerization domain, where the process of heterodimerization mediated by this domain can be regulated by binding to a small molecule, such as an ion or ligand. A functional transcription driver can be reconstituted in vivo if this split system component is brought together with a split system component that encodes a transcription activation domain fused to the complementary heterodimerization domain and the appropriate small molecule stimulus is applied.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="http://orcid.org/0000-0002-1373-1705"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-05-04T14:38:38Z</terms:date>
+        <oboInOwl:hasOBONamespace>experimental_tool_descriptor</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBcv:0007058</oboInOwl:id>
+        <rdfs:label>small molecule-regulated split driver - DNA-binding fragment</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBcv_0007058"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Sequence encoding a site-specific DNA-binding domain fused to a heterodimerization domain, where the process of heterodimerization mediated by this domain can be regulated by binding to a small molecule, such as an ion or ligand. A functional transcription driver can be reconstituted in vivo if this split system component is brought together with a split system component that encodes a transcription activation domain fused to the complementary heterodimerization domain and the appropriate small molecule stimulus is applied.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:GM</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 

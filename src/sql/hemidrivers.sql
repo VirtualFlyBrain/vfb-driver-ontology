@@ -17,7 +17,7 @@ JOIN cv c ON ct.cv_id=c.cv_id
 JOIN dbxref dx ON ct.dbxref_id=dx.dbxref_id
 JOIN db d ON dx.db_id=d.db_id
 WHERE d.name in ('FBcv')
-AND dx.accession in ('0005055', '0005054')
+AND dx.accession in ('0005054', '0007056', '0007057', '0007058', '0005055', '0007053', '0007054', '0007055')
 AND f.is_obsolete='f') AS split_tools
 JOIN (SELECT f.uniquename AS feature_FBid, f.name AS feature_name, s.name AS feature_synonym, f.feature_id, fr.object_id AS tool_id, cv.name AS relationship
 FROM feature_relationship fr

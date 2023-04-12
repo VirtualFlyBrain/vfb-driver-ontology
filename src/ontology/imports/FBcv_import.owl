@@ -17,9 +17,9 @@
      xmlns:subsets="http://purl.obolibrary.org/obo/ro/subsets#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/VFB_drivers/imports/FBcv_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/VFB_drivers/releases/2023-03-13/imports/FBcv_import.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/VFB_drivers/releases/2023-04-12/imports/FBcv_import.owl"/>
         <dc:source rdf:resource="http://purl.obolibrary.org/obo/fbcv/releases/2023-02-09/fbcv.owl"/>
-        <owl:versionInfo>2023-03-13</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-04-12</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -56,8 +56,8 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
-        <obo:IAO_0000111 xml:lang="en">definition</obo:IAO_0000111>
         <obo:IAO_0000111>definition</obo:IAO_0000111>
+        <obo:IAO_0000111 xml:lang="en">definition</obo:IAO_0000111>
         <obo:IAO_0000111>textual definition</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.</obo:IAO_0000115>
@@ -134,12 +134,6 @@ We also have the outstanding issue of how to aim different definitions to differ
     <!-- http://purl.obolibrary.org/obo/IAO_0000600 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000600"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000700 -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000700"/>
     
 
 
@@ -237,12 +231,6 @@ We also have the outstanding issue of how to aim different definitions to differ
     
 
 
-    <!-- http://purl.obolibrary.org/obo/fbcv#attributionURL -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbcv#attributionURL"/>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/fbcv#common_tool_use -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbcv#common_tool_use">
@@ -264,12 +252,6 @@ We also have the outstanding issue of how to aim different definitions to differ
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/ro/subsets#ro-eco">
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
     </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.org/dc/elements/1.1/creator -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
     
 
 
@@ -307,14 +289,7 @@ We also have the outstanding issue of how to aim different definitions to differ
 
     <!-- http://purl.org/dc/terms/contributor -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor">
-        <oboInOwl:hasDbXref>http://purl.org/dc/terms/contributor</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>dc-contributor</oboInOwl:id>
-        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
-        <oboInOwl:shorthand>dc-contributor</oboInOwl:shorthand>
-        <rdfs:label>contributor</rdfs:label>
-    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
     
 
 
@@ -373,18 +348,6 @@ We also have the outstanding issue of how to aim different definitions to differ
     
 
 
-    <!-- http://www.geneontology.org/formats/oboInOwl#date -->
-
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#date"/>
-    
-
-
-    <!-- http://www.geneontology.org/formats/oboInOwl#default-namespace -->
-
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#default-namespace"/>
-    
-
-
     <!-- http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym"/>
@@ -403,12 +366,6 @@ We also have the outstanding issue of how to aim different definitions to differ
         <rdfs:isDefinedBy rdf:resource="http://www.geneontology.org/formats/oboinowl.owl"/>
         <rdfs:label>has_exact_synonym</rdfs:label>
     </owl:AnnotationProperty>
-    
-
-
-    <!-- http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion -->
-
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion"/>
     
 
 
@@ -573,8 +530,8 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:is_cyclic rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</oboInOwl:is_cyclic>
         <oboInOwl:shorthand>has_part</oboInOwl:shorthand>
         <rdfs:comment>We use the has_part relation to relate complex qualities to more primitive ones. A complex quality is a collection of qualities. The complex quality cannot exist without the sub-qualities. For example, the quality &apos;swollen&apos; necessarily comes with the qualities of &apos;protruding&apos; and &apos;increased size&apos;.</rdfs:comment>
-        <rdfs:label xml:lang="en">has part</rdfs:label>
         <rdfs:label>has part</rdfs:label>
+        <rdfs:label xml:lang="en">has part</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -805,8 +762,8 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:is_cyclic rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</oboInOwl:is_cyclic>
         <oboInOwl:is_transitive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</oboInOwl:is_transitive>
         <oboInOwl:shorthand>has_role</oboInOwl:shorthand>
-        <rdfs:label xml:lang="en">has role</rdfs:label>
         <rdfs:label>has role</rdfs:label>
+        <rdfs:label xml:lang="en">has role</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2562,7 +2519,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBcv_0000013"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Term that describes an allele, balancer, group or publication.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>FBC:MMC</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:MMC</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -2583,7 +2540,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBcv_0005001"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Term that describes the use of an experimental tool.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>FBC:GM</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:GM</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -2603,7 +2560,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBcv_0005051"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Component that forms part of a &apos;split system&apos;. A split system component corresponds to a non-functional fragment of a functional experimental tool that would normally be encoded by a single gene product. When combined with another appropriate split system component in vivo, a functional experimental tool is produced. The fragments of a split system can be brought together in vivo in a number of different ways; for example, by fusing fragments to peptides that physically interact in vivo.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>FBC:GM</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:GM</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -2623,8 +2580,8 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBcv_0005054"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Sequence encoding a site-specific DNA-binding domain fused to a heterodimerization domain. A functional transcription driver can be reconstituted if this split system component is brought together in vivo with a split system component that encodes a transcription activation domain fused to the complementary heterodimerization domain.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>FBC:GM</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>FlyBase:FBrf0193617</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:GM</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0193617</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -2645,8 +2602,8 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBcv_0005055"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Sequence encoding a transcription activation domain fused to a heterodimerization domain. A functional transcription driver can be reconstituted if this split system component is brought together in vivo with a split system component that encodes a DNA-binding domain fused to the complementary heterodimerization domain.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>FBC:GM</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>FlyBase:FBrf0193617</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:GM</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0193617</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -2666,7 +2623,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBcv_0007053"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Sequence encoding a transcription activation domain fused to a heterodimerization domain, where the process of heterodimerization mediated by this domain can be regulated by a particular stimulus. A functional transcription driver can be reconstituted in vivo if this split system component is brought together with a split system component that encodes a DNA-binding domain fused to the complementary heterodimerization domain and the appropriate stimulus is applied.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>FBC:GM</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:GM</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -2686,7 +2643,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBcv_0007054"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Sequence encoding a transcription activation domain fused to a heterodimerization domain, where the process of heterodimerization mediated by this domain can be regulated by irradiation with a pulse of light. A functional transcription driver can be reconstituted in vivo if this split system component is brought together with a split system component that encodes a DNA-binding domain fused to the complementary heterodimerization domain and the appropriate light stimulus is applied.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>FBC:GM</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:GM</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -2706,7 +2663,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBcv_0007055"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Sequence encoding a transcription activation domain fused to a heterodimerization domain, where the process of heterodimerization mediated by this domain can be regulated by binding to a small molecule, such as an ion or ligand. A functional transcription driver can be reconstituted in vivo if this split system component is brought together with a split system component that encodes a DNA-binding domain fused to the complementary heterodimerization domain and the appropriate small molecule stimulus is applied.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>FBC:GM</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:GM</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -2726,7 +2683,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBcv_0007056"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Sequence encoding a site-specific DNA-binding domain fused to a heterodimerization domain, where the process of heterodimerization mediated by this domain can be regulated by a particular stimulus. A functional transcription driver can be reconstituted in vivo if this split system component is brought together with a split system component that encodes a transcription activation domain fused to the complementary heterodimerization domain and the appropriate stimulus is applied.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>FBC:GM</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:GM</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -2746,7 +2703,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBcv_0007057"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Sequence encoding a site-specific DNA-binding domain fused to a heterodimerization domain, where the process of heterodimerization mediated by this domain can be regulated by irradiation with a pulse of light. A functional transcription driver can be reconstituted in vivo if this split system component is brought together with a split system component that encodes a transcription activation domain fused to the complementary heterodimerization domain and the appropriate light stimulus is applied.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>FBC:GM</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:GM</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -2766,7 +2723,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBcv_0007058"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Sequence encoding a site-specific DNA-binding domain fused to a heterodimerization domain, where the process of heterodimerization mediated by this domain can be regulated by binding to a small molecule, such as an ion or ligand. A functional transcription driver can be reconstituted in vivo if this split system component is brought together with a split system component that encodes a transcription activation domain fused to the complementary heterodimerization domain and the appropriate small molecule stimulus is applied.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>FBC:GM</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:GM</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -3207,8 +3164,8 @@ For example, A and B may be gene products and binding of B by A positively regul
     </rdf:Description>
     <rdf:Description>
         <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
-        <rdfs:comment>MF(X)-directly_regulates-&gt;MF(Y)-enabled_by-&gt;GP(Z) =&gt; MF(Y)-has_input-&gt;GP(Y) e.g. if &apos;protein kinase activity&apos;(X) directly_regulates &apos;protein binding activity (Y)and this is enabled by GP(Z) then X has_input Z</rdfs:comment>
-        <rdfs:label>infer input from direct reg</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MF(X)-directly_regulates-&gt;MF(Y)-enabled_by-&gt;GP(Z) =&gt; MF(Y)-has_input-&gt;GP(Y) e.g. if &apos;protein kinase activity&apos;(X) directly_regulates &apos;protein binding activity (Y)and this is enabled by GP(Z) then X has_input Z</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">infer input from direct reg</rdfs:label>
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
         <swrl:body>
             <rdf:Description>
@@ -3337,8 +3294,8 @@ e.g.  if GP X enables ATPase coupled transporter activity&apos; and &apos;ATPase
     </rdf:Description>
     <rdf:Description>
         <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
-        <rdfs:comment>GP(X)-enables-&gt;MF(Y)-part_of-&gt;BP(Z) =&gt; GP(X) involved_in BP(Z) e.g. if X enables &apos;protein kinase activity&apos; and Y &apos;part of&apos; &apos;signal tranduction&apos; then X involved in &apos;signal transduction&apos;</rdfs:comment>
-        <rdfs:label>involved in BP</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GP(X)-enables-&gt;MF(Y)-part_of-&gt;BP(Z) =&gt; GP(X) involved_in BP(Z) e.g. if X enables &apos;protein kinase activity&apos; and Y &apos;part of&apos; &apos;signal tranduction&apos; then X involved in &apos;signal transduction&apos;</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">involved in BP</rdfs:label>
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
         <swrl:body>
             <rdf:Description>
@@ -4243,5 +4200,5 @@ e.g.  if GP X enables ATPase coupled transporter activity&apos; and &apos;ATPase
 
 
 
-<!-- Generated by the OWL API (version 4.5.25) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.6) https://github.com/owlcs/owlapi -->
 

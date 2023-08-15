@@ -15,7 +15,7 @@ WHERE {
     oboInOwl:inSubset
     dcterms:contributor  }
   ?term ?property ?value .
-  FILTER(isIRI(?term) && (STRSTARTS(str(?term), "http://purl.obolibrary.org/obo/VFB_DRIVERS_") || STRSTARTS(str(?term), "http://virtualflybrain.org/reports/VFBexp_") || STRSTARTS(str(?term), "http://flybase.org/reports/")))
+  FILTER(isIRI(?term) && (STRSTARTS(str(?term), "http://virtualflybrain.org/reports/VFBexp_") || STRSTARTS(str(?term), "http://flybase.org/reports/")))
   FILTER (!isIRI(?value))
 }
 

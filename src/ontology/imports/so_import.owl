@@ -7,7 +7,7 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/VFB_drivers/imports/so_import.owl>
-<http://purl.obolibrary.org/obo/VFB_drivers/releases/2023-09-11/imports/so_import.owl>
+<http://purl.obolibrary.org/obo/VFB_drivers/releases/2023-09-18/imports/so_import.owl>
 Annotation(<http://purl.obolibrary.org/obo/IAO_0000700> <http://purl.obolibrary.org/obo/SO_0000110>)
 Annotation(<http://purl.obolibrary.org/obo/IAO_0000700> <http://purl.obolibrary.org/obo/SO_0000400>)
 Annotation(<http://purl.obolibrary.org/obo/IAO_0000700> <http://purl.obolibrary.org/obo/SO_0001060>)
@@ -18,7 +18,7 @@ Annotation(<http://www.geneontology.org/formats/oboInOwl#date> "22:11:2021 06:31
 Annotation(<http://www.geneontology.org/formats/oboInOwl#default-namespace> "sequence")
 Annotation(<http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion> "1.2")
 Annotation(<http://www.geneontology.org/formats/oboInOwl#saved-by> "David Sant")
-Annotation(owl:versionInfo "2023-09-11")
+Annotation(owl:versionInfo "2023-09-18")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/SO_0000110>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))

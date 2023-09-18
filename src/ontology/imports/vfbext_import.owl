@@ -7,8 +7,8 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/VFB_drivers/imports/vfbext_import.owl>
-<http://purl.obolibrary.org/obo/VFB_drivers/releases/2023-09-11/imports/vfbext_import.owl>
-Annotation(owl:versionInfo "2023-09-11")
+<http://purl.obolibrary.org/obo/VFB_drivers/releases/2023-09-18/imports/vfbext_import.owl>
+Annotation(owl:versionInfo "2023-09-18")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000002>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000003>))

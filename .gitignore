@@ -16,7 +16,7 @@ src/ontology/VFB_drivers-base.*
 src/ontology/VFB_drivers-basic.*
 src/ontology/VFB_drivers-full.*
 src/ontology/VFB_drivers-simple.*
-src/ontology/VFB_drivers-simple-non-classified.*
+src/ontology/VFB_drivers-non-classified.*
 
 src/ontology/seed.txt
 src/ontology/dosdp-tools.log

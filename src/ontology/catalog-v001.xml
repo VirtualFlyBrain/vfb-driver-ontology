@@ -2,16 +2,7 @@
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
 <group id="Folder Repository, directory=, recursive=false, Auto-Update=false, version=2" prefer="public" xml:base="">
 
-  
-  <uri name="http://purl.obolibrary.org/obo/VFB_drivers/imports/so_import.owl" uri="imports/so_import.owl"/>
-
-  <uri name="http://purl.obolibrary.org/obo/VFB_drivers/imports/FBcv_import.owl" uri="imports/FBcv_import.owl"/>
-
-  <uri name="http://purl.obolibrary.org/obo/VFB_drivers/imports/vfbext_import.owl" uri="imports/vfbext_import.owl"/>
-  
-
-
-  
+  <uri name="http://purl.obolibrary.org/obo/VFB_drivers/imports/merged_import.owl" uri="imports/merged_import.owl"/>
 
 </group>
 </catalog>

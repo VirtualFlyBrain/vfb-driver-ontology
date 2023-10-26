@@ -1,0 +1,228 @@
+Prefix(:=<http://purl.obolibrary.org/obo/VFB_drivers/imports/merged_import.owl#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://purl.obolibrary.org/obo/VFB_drivers/imports/merged_import.owl>
+<http://purl.obolibrary.org/obo/VFB_drivers/releases/2023-10-26/imports/merged_import.owl>
+Annotation(owl:versionInfo "2023-10-26")
+
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000040>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_10000000>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBcv_0000000>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBcv_0000013>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBcv_0005001>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBcv_0005051>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBcv_0005054>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBcv_0005055>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBcv_0007054>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBcv_0007055>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBcv_0007057>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBcv_0007058>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBcv_0009027>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SO_0000110>))
+Declaration(Class(<http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000700>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/fbcv#common_tool_use>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/fbcv#do_not_annotate>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/so#SOFA>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/description>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/title>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/contributor>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/date>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/license>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#SubsetProperty>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#auto-generated-by>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#consider>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#created_by>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#creation_date>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#date>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#default-namespace>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasDbXref>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#id>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#inSubset>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#saved-by>))
+############################
+#   Annotation Properties
+############################
+
+# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000115> (definition)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000115> "definition")
+
+# Annotation Property: <http://purl.obolibrary.org/obo/fbcv#common_tool_use> (<http://purl.obolibrary.org/obo/fbcv#common_tool_use>)
+
+SubAnnotationPropertyOf(<http://purl.obolibrary.org/obo/fbcv#common_tool_use> <http://www.geneontology.org/formats/oboInOwl#SubsetProperty>)
+
+# Annotation Property: <http://purl.obolibrary.org/obo/fbcv#do_not_annotate> (<http://purl.obolibrary.org/obo/fbcv#do_not_annotate>)
+
+SubAnnotationPropertyOf(<http://purl.obolibrary.org/obo/fbcv#do_not_annotate> <http://www.geneontology.org/formats/oboInOwl#SubsetProperty>)
+
+# Annotation Property: <http://purl.obolibrary.org/obo/so#SOFA> (<http://purl.obolibrary.org/obo/so#SOFA>)
+
+SubAnnotationPropertyOf(<http://purl.obolibrary.org/obo/so#SOFA> <http://www.geneontology.org/formats/oboInOwl#SubsetProperty>)
+
+# Annotation Property: <http://purl.org/dc/terms/license> (has_license)
+
+AnnotationAssertion(rdfs:label <http://purl.org/dc/terms/license> "has_license")
+
+# Annotation Property: <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> (has_exact_synonym)
+
+AnnotationAssertion(rdfs:label <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "has_exact_synonym")
+
+
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008> (has hemidriver)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:17088209") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008> "A relationship between an interesctional expression pattern and one of the hemidrivers that contributes to driving its expression.  For example, the split-GAL4 system drives expression using transgenes encoding a pair of interacting proteins, one with a GAL4 DNA binding domain and one with an transcription activation domain.  In cells that co-express these two transgenes, interaction between the two proteins reconsitutes a transcription factor, driving expression from transgenes under the control o f UAS enhancer/promoter elements.")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008> "dos")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008> "2018-09-26T07:48:55Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008> "has hemidriver"@en)
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008> <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010>)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://purl.obolibrary.org/obo/FBcv_0000000> (FlyBase CV)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FBcv_0000000> "FlyBase miscellaneous controlled vocabulary term.")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/FBcv_0000000> "FlyBase miscellaneous CV")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/FBcv_0000000> "FBcv:0000000")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBcv_0000000> "FlyBase CV")
+
+# Class: <http://purl.obolibrary.org/obo/FBcv_0000013> (descriptor)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "FBC:MMC") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FBcv_0000013> "Term that describes an allele, balancer, group or publication.")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/FBcv_0000013> "FlyBase miscellaneous CV")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/FBcv_0000013> "FBcv:0000013")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/FBcv_0000013> <http://purl.obolibrary.org/obo/fbcv#do_not_annotate>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBcv_0000013> "descriptor")
+SubClassOf(<http://purl.obolibrary.org/obo/FBcv_0000013> <http://purl.obolibrary.org/obo/FBcv_0000000>)
+
+# Class: <http://purl.obolibrary.org/obo/FBcv_0005001> (experimental tool descriptor)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "FBC:GM") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FBcv_0005001> "Term that describes the use of an experimental tool.")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FBcv_0005001> <http://orcid.org/0000-0002-0027-0858>)
+AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FBcv_0005001> "2017-06-28T11:41:27Z"^^xsd:dateTime)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/FBcv_0005001> "FlyBase miscellaneous CV")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/FBcv_0005001> "FBcv:0005001")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/FBcv_0005001> <http://purl.obolibrary.org/obo/fbcv#do_not_annotate>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBcv_0005001> "experimental tool descriptor")
+SubClassOf(<http://purl.obolibrary.org/obo/FBcv_0005001> <http://purl.obolibrary.org/obo/FBcv_0000013>)
+
+# Class: <http://purl.obolibrary.org/obo/FBcv_0005051> (split system component)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "FBC:GM") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FBcv_0005051> "Component that forms part of a 'split system'. A split system component corresponds to a non-functional fragment of a functional experimental tool that would normally be encoded by a single gene product. When combined with another appropriate split system component in vivo, a functional experimental tool is produced. The fragments of a split system can be brought together in vivo in a number of different ways; for example, by fusing fragments to peptides that physically interact in vivo.")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FBcv_0005051> <http://orcid.org/0000-0002-0027-0858>)
+AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FBcv_0005051> "2017-06-28T11:41:27Z"^^xsd:dateTime)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/FBcv_0005051> "experimental_tool_descriptor")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/FBcv_0005051> "FBcv:0005051")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBcv_0005051> "split system component")
+SubClassOf(<http://purl.obolibrary.org/obo/FBcv_0005051> <http://purl.obolibrary.org/obo/FBcv_0005001>)
+
+# Class: <http://purl.obolibrary.org/obo/FBcv_0005054> (split driver - DNA-binding fragment)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "FBC:GM") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FBcv_0005054> "Non-functional fragment of a transcriptional activator ('driver') that includes a DNA-binding domain and which can be used to reconstitute a functional transcription driver when brought together in vivo with a complementary split driver fragment that encodes a transcription activation domain, for example by including a compatible physical interaction domain or split intein fragment in each of the complementary split driver fragments.")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FBcv_0005054> <http://orcid.org/0000-0002-0027-0858>)
+AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FBcv_0005054> "2017-06-28T11:41:27Z"^^xsd:dateTime)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/FBcv_0005054> "experimental_tool_descriptor")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/FBcv_0005054> "FBcv:0005054")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBcv_0005054> "split driver - DNA-binding fragment")
+SubClassOf(<http://purl.obolibrary.org/obo/FBcv_0005054> <http://purl.obolibrary.org/obo/FBcv_0009027>)
+
+# Class: <http://purl.obolibrary.org/obo/FBcv_0005055> (split driver - transcription activation fragment)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "FBC:GM") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FBcv_0005055> "Non-functional fragment of a transcriptional activator ('driver') that includes a transcription activation domain and which can be used to reconstitute a functional transcription driver when brought together in vivo with a complementary split driver fragment that encodes a DNA-binding domain, for example by including a compatible physical interaction domain or split intein fragment in each of the complementary split driver fragments.")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FBcv_0005055> <http://orcid.org/0000-0002-0027-0858>)
+AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FBcv_0005055> "2017-06-28T11:41:27Z"^^xsd:dateTime)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/FBcv_0005055> "experimental_tool_descriptor")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/FBcv_0005055> "FBcv:0005055")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/FBcv_0005055> <http://purl.obolibrary.org/obo/fbcv#common_tool_use>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBcv_0005055> "split driver - transcription activation fragment")
+SubClassOf(<http://purl.obolibrary.org/obo/FBcv_0005055> <http://purl.obolibrary.org/obo/FBcv_0009027>)
+
+# Class: <http://purl.obolibrary.org/obo/FBcv_0007054> (obsolete light-regulated split driver - transcription activation fragment)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#consider> <http://purl.obolibrary.org/obo/FBcv_0007054> "FBcv:0005055")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#consider> <http://purl.obolibrary.org/obo/FBcv_0007054> "FBcv:0009029")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/FBcv_0007054> "FlyBase miscellaneous CV")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/FBcv_0007054> "FBcv:0007054")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBcv_0007054> "obsolete light-regulated split driver - transcription activation fragment")
+AnnotationAssertion(owl:deprecated <http://purl.obolibrary.org/obo/FBcv_0007054> "true"^^xsd:boolean)
+
+# Class: <http://purl.obolibrary.org/obo/FBcv_0007055> (obsolete small molecule-regulated split driver - transcription activation fragment)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#consider> <http://purl.obolibrary.org/obo/FBcv_0007055> "FBcv:0005055")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#consider> <http://purl.obolibrary.org/obo/FBcv_0007055> "FBcv:0009030")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/FBcv_0007055> "FlyBase miscellaneous CV")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/FBcv_0007055> "FBcv:0007055")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBcv_0007055> "obsolete small molecule-regulated split driver - transcription activation fragment")
+AnnotationAssertion(owl:deprecated <http://purl.obolibrary.org/obo/FBcv_0007055> "true"^^xsd:boolean)
+
+# Class: <http://purl.obolibrary.org/obo/FBcv_0007057> (obsolete light-regulated split driver - DNA-binding fragment)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#consider> <http://purl.obolibrary.org/obo/FBcv_0007057> "FBcv:0005054")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#consider> <http://purl.obolibrary.org/obo/FBcv_0007057> "FBcv:0009029")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/FBcv_0007057> "FlyBase miscellaneous CV")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/FBcv_0007057> "FBcv:0007057")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBcv_0007057> "obsolete light-regulated split driver - DNA-binding fragment")
+AnnotationAssertion(owl:deprecated <http://purl.obolibrary.org/obo/FBcv_0007057> "true"^^xsd:boolean)
+
+# Class: <http://purl.obolibrary.org/obo/FBcv_0007058> (obsolete small molecule-regulated split driver - DNA-binding fragment)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#consider> <http://purl.obolibrary.org/obo/FBcv_0007058> "FBcv:0009030")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/FBcv_0007058> "FBcv:0005054")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/FBcv_0007058> "FlyBase miscellaneous CV")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/FBcv_0007058> "FBcv:0007058")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBcv_0007058> "obsolete small molecule-regulated split driver - DNA-binding fragment")
+AnnotationAssertion(owl:deprecated <http://purl.obolibrary.org/obo/FBcv_0007058> "true"^^xsd:boolean)
+
+# Class: <http://purl.obolibrary.org/obo/FBcv_0009027> (split driver fragment)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "FBC:GM") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FBcv_0009027> "Non-functional fragment of a transcriptional activator ('driver') that can be used to reconstitute a functional transcription driver when brought together in vivo with a complementary split driver fragment, for example by including a compatible physical interaction domain or split intein fragment in each of the complementary split driver fragments.")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FBcv_0009027> <https://orcid.org/0000-0002-6095-8718>)
+AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FBcv_0009027> "2023-07-31T17:10:54Z"^^xsd:dateTime)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/FBcv_0009027> "experimental_tool_descriptor")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/FBcv_0009027> "FBcv:0009027")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBcv_0009027> "split driver fragment")
+SubClassOf(<http://purl.obolibrary.org/obo/FBcv_0009027> <http://purl.obolibrary.org/obo/FBcv_0005051>)
+
+# Class: <http://purl.obolibrary.org/obo/SO_0000110> (sequence_feature)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "LAMHDI:mb") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "SO:ke") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SO_0000110> "Any extent of continuous biological sequence.")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SO_0000110> "INSDC_feature:misc_feature")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SO_0000110> "INSDC_note:other")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SO_0000110> "INSDC_note:sequence_feature")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SO_0000110> "located_sequence_feature")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SO_0000110> "sequence feature")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/SO_0000110> "sequence")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/SO_0000110> "located sequence feature")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/SO_0000110> "SO:0000110")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/SO_0000110> <http://purl.obolibrary.org/obo/so#SOFA>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SO_0000110> "sequence_feature")
+SubClassOf(<http://purl.obolibrary.org/obo/SO_0000110> <http://purl.obolibrary.org/obo/BFO_0000040>)
+
+# Class: <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010> (intersectional expression pattern)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010> "dos")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010> "2018-09-26T07:54:17Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010> "intersectional expression pattern"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010> <http://purl.obolibrary.org/obo/FBbt_10000000>)
+
+
+)

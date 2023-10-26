@@ -9,7 +9,7 @@ prepare_release: all $(ONT)-cedar.owl $(REPORTDIR)/robot_diff.txt
 	rm -f $(CLEANFILES) &&\
 	echo "Release files are now in $(RELEASEDIR) - now you should commit, push and make a release on your git hosting site such as GitHub or GitLab"
 
-CLEANFILES:=$(CLEANFILES) $(ONT)-cedar.owl $(patsubst %, $(IMPORTDIR)/%_terms_combined.txt, $(IMPORTS))
+CLEANFILES:=$(CLEANFILES) $(ONT)-cedar.owl $(IMPORTDIR)/*_terms_combined.txt
 
 .PHONY: get_FB_hemidrivers
 get_FB_hemidrivers: $(TMPDIR)

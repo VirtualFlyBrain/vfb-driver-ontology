@@ -7,8 +7,8 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/VFB_drivers/imports/merged_import.owl>
-<http://purl.obolibrary.org/obo/VFB_drivers/releases/2023-12-04/imports/merged_import.owl>
-Annotation(owl:versionInfo "2023-12-04")
+<http://purl.obolibrary.org/obo/VFB_drivers/releases/2023-12-11/imports/merged_import.owl>
+Annotation(owl:versionInfo "2023-12-11")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000040>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_10000000>))
@@ -18,10 +18,6 @@ Declaration(Class(<http://purl.obolibrary.org/obo/FBcv_0005001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBcv_0005051>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBcv_0005054>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBcv_0005055>))
-Declaration(Class(<http://purl.obolibrary.org/obo/FBcv_0007054>))
-Declaration(Class(<http://purl.obolibrary.org/obo/FBcv_0007055>))
-Declaration(Class(<http://purl.obolibrary.org/obo/FBcv_0007057>))
-Declaration(Class(<http://purl.obolibrary.org/obo/FBcv_0007058>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBcv_0009027>))
 Declaration(Class(<http://purl.obolibrary.org/obo/SO_0000110>))
 Declaration(Class(<http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010>))
@@ -38,7 +34,6 @@ Declaration(AnnotationProperty(<http://purl.org/dc/terms/date>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/license>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#SubsetProperty>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#auto-generated-by>))
-Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#consider>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#created_by>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#creation_date>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#date>))
@@ -155,42 +150,6 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://pu
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/FBcv_0005055> <http://purl.obolibrary.org/obo/fbcv#common_tool_use>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBcv_0005055> "split driver - transcription activation fragment")
 SubClassOf(<http://purl.obolibrary.org/obo/FBcv_0005055> <http://purl.obolibrary.org/obo/FBcv_0009027>)
-
-# Class: <http://purl.obolibrary.org/obo/FBcv_0007054> (obsolete light-regulated split driver - transcription activation fragment)
-
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#consider> <http://purl.obolibrary.org/obo/FBcv_0007054> "FBcv:0005055")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#consider> <http://purl.obolibrary.org/obo/FBcv_0007054> "FBcv:0009029")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/FBcv_0007054> "FlyBase miscellaneous CV")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/FBcv_0007054> "FBcv:0007054")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBcv_0007054> "obsolete light-regulated split driver - transcription activation fragment")
-AnnotationAssertion(owl:deprecated <http://purl.obolibrary.org/obo/FBcv_0007054> "true"^^xsd:boolean)
-
-# Class: <http://purl.obolibrary.org/obo/FBcv_0007055> (obsolete small molecule-regulated split driver - transcription activation fragment)
-
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#consider> <http://purl.obolibrary.org/obo/FBcv_0007055> "FBcv:0005055")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#consider> <http://purl.obolibrary.org/obo/FBcv_0007055> "FBcv:0009030")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/FBcv_0007055> "FlyBase miscellaneous CV")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/FBcv_0007055> "FBcv:0007055")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBcv_0007055> "obsolete small molecule-regulated split driver - transcription activation fragment")
-AnnotationAssertion(owl:deprecated <http://purl.obolibrary.org/obo/FBcv_0007055> "true"^^xsd:boolean)
-
-# Class: <http://purl.obolibrary.org/obo/FBcv_0007057> (obsolete light-regulated split driver - DNA-binding fragment)
-
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#consider> <http://purl.obolibrary.org/obo/FBcv_0007057> "FBcv:0005054")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#consider> <http://purl.obolibrary.org/obo/FBcv_0007057> "FBcv:0009029")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/FBcv_0007057> "FlyBase miscellaneous CV")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/FBcv_0007057> "FBcv:0007057")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBcv_0007057> "obsolete light-regulated split driver - DNA-binding fragment")
-AnnotationAssertion(owl:deprecated <http://purl.obolibrary.org/obo/FBcv_0007057> "true"^^xsd:boolean)
-
-# Class: <http://purl.obolibrary.org/obo/FBcv_0007058> (obsolete small molecule-regulated split driver - DNA-binding fragment)
-
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#consider> <http://purl.obolibrary.org/obo/FBcv_0007058> "FBcv:0009030")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/FBcv_0007058> "FBcv:0005054")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/FBcv_0007058> "FlyBase miscellaneous CV")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/FBcv_0007058> "FBcv:0007058")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBcv_0007058> "obsolete small molecule-regulated split driver - DNA-binding fragment")
-AnnotationAssertion(owl:deprecated <http://purl.obolibrary.org/obo/FBcv_0007058> "true"^^xsd:boolean)
 
 # Class: <http://purl.obolibrary.org/obo/FBcv_0009027> (split driver fragment)
 

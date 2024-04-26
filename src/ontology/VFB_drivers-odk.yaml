@@ -6,6 +6,7 @@ git_main_branch: master
 robot_report:
   custom_profile: TRUE
 use_dosdps: FALSE
+run_as_root: TRUE
 dosdp_tools_options: "--obo-prefixes=true --restrict-axioms-to=logical"
 namespaces: 
   - http://virtualflybrain.org/reports/VFBexp_

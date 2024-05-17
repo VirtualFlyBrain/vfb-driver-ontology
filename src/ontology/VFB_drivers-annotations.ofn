@@ -8,11 +8,13 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 Ontology(<http://virtualflybrain.org/data/VFB/OWL/VFB_drivers.owl>
 Import(<http://purl.obolibrary.org/obo/VFB_drivers/imports/merged_import.owl>)
-Annotation(<http://purl.org/dc/elements/1.1/description> "An ontology of Drosophila melanogaster drivers and expression patterns. Split expression pattern classes are taken from Virtual Fly Brain, where these were created and linked to FlyBase terms for hemidrivers. Hemidriver classes are created using data taken directly from FlyBase. Other driver classes are retrieved from Virtual Fly Brain, which creates these using data from FlyBase."^^xsd:string)
-Annotation(<http://purl.org/dc/elements/1.1/title> "VFB Driver Ontology"^^xsd:string)
+Annotation(<http://purl.org/dc/elements/1.1/description> "An ontology of Drosophila melanogaster drivers and expression patterns. All genetic objects are created using data taken directly from FlyBase.")
+Annotation(<http://purl.org/dc/elements/1.1/title> "VFB Driver Ontology")
 Annotation(<http://purl.org/dc/terms/contributor> "http://orcid.org/0000-0002-1373-1705")
-Annotation(<http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0/"^^xsd:string)
+Annotation(<http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0/")
 
+Declaration(Class(<http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/description>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/title>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/license>))

@@ -11,32 +11,26 @@ prepare_release: all $(ONT)-cedar.owl $(REPORTDIR)/robot_diff.txt
 
 CLEANFILES:=$(CLEANFILES) $(ONT)-cedar.owl $(IMPORTDIR)/*_terms_combined.txt
 
-.PHONY: get_FB_hemidrivers
-get_FB_hemidrivers: $(TMPDIR)
-	# get hemidriver data from public chado
+$(TMPDIR)/FB_data.tsv: | $(TMPDIR)
 	apt-get update
 	apt-get -y install postgresql-client
-	psql -h chado.flybase.org -U flybase flybase -f ../sql/hemidrivers.sql > $(TMPDIR)/hemidrivers.tsv
+	psql -h chado.flybase.org -U flybase flybase -f ../sql/FB_query.sql > $(TMPDIR)/FB_data.tsv
 
-.PHONY: update_ontology
-update_ontology: get_FB_hemidrivers
-	python3 -m pip install -r $(SCRIPTSDIR)/requirements.txt && \
-	python3 $(SCRIPTSDIR)/update_ontology.py &&\
+$(TMPDIR)/template.tsv: | $(TMPDIR)
+	python3 $(SCRIPTSDIR)/process_FB_data.py &&\
+	python3 $(SCRIPTSDIR)/make_template.py
+
+$(SRC): $(TMPDIR)/FB_data.tsv $(TMPDIR)/template.tsv
 	$(ROBOT) template \
-	--template properties_template.tsv \
-	--output $(TMPDIR)/VFB_drivers-properties-tmp.owl &&\
-	$(ROBOT) template \
-	--input $(TMPDIR)/VFB_drivers-properties-tmp.owl \
-	--template template.tsv \
-	--output $(TMPDIR)/VFB_drivers-classes-tmp.owl &&\
-	$(ROBOT) merge \
+	--merge-before \
 	--input VFB_drivers-annotations.ofn \
-	--input $(TMPDIR)/VFB_drivers-properties-tmp.owl \
-	--input $(TMPDIR)/VFB_drivers-classes-tmp.owl \
-	--include-annotations true --collapse-import-closure false \
-	--output VFB_drivers-edit.owl &&\
+	--prefix "FlyBase: http://flybase.org/reports/" \
+	--prefix "VFBext: http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_" \
+	--template $(TMPDIR)/template.tsv \
+	--include-annotations true \
+	--collapse-import-closure false \
+	--output $@ &&\
 	echo "\nOntology source file updated!\n"
-	rm template.tsv properties_template.tsv $(TMPDIR)/VFB_drivers-properties-tmp.owl $(TMPDIR)/VFB_drivers-classes-tmp.owl
 
 $(ONT).owl: $(ONT)-full.owl
 	grep -v owl:versionIRI $< > $@.tmp.owl

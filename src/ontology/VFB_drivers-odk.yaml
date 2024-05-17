@@ -13,8 +13,6 @@ namespaces:
   - http://flybase.org/reports/
 release_artefacts:
   - base
-  - simple
-  - non-classified
   - full
 primary_release: full
 export_formats:

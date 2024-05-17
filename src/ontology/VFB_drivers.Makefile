@@ -11,12 +11,12 @@ prepare_release: all $(ONT)-cedar.owl $(REPORTDIR)/robot_diff.txt
 
 CLEANFILES:=$(CLEANFILES) $(ONT)-cedar.owl $(IMPORTDIR)/*_terms_combined.txt
 
-$(TMPDIR)/FB_data.tsv:
+$(TMPDIR)/FB_data.tsv: | $(TMPDIR)
 	apt-get update
 	apt-get -y install postgresql-client
 	psql -h chado.flybase.org -U flybase flybase -f ../sql/FB_query.sql > $(TMPDIR)/FB_data.tsv
 
-$(TMPDIR)/template.tsv:
+$(TMPDIR)/template.tsv: | $(TMPDIR)
 	python3 $(SCRIPTSDIR)/process_FB_data.py &&\
 	python3 $(SCRIPTSDIR)/make_template.py
 

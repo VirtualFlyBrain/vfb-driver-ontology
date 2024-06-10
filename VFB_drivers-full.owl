@@ -11,13 +11,13 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/VFB_drivers/VFB_drivers-full.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/VFB_drivers/releases/2024-06-03/VFB_drivers-full.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/VFB_drivers/releases/2024-06-10/VFB_drivers-full.owl"/>
         <dc:description>An ontology of Drosophila melanogaster drivers and expression patterns. All genetic objects are created using data taken directly from FlyBase.</dc:description>
         <dc:title>VFB Driver Ontology</dc:title>
         <terms:contributor>http://orcid.org/0000-0002-1373-1705</terms:contributor>
         <terms:license>https://creativecommons.org/licenses/by/4.0/</terms:license>
-        <oboInOwl:date>03:06:2024 01:16</oboInOwl:date>
-        <owl:versionInfo>2024-06-03</owl:versionInfo>
+        <oboInOwl:date>10:06:2024 01:18</oboInOwl:date>
+        <owl:versionInfo>2024-06-10</owl:versionInfo>
     </owl:Ontology>
     
 

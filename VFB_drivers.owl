@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://virtualflybrain.org/data/VFB/OWL/vfb_drivers.owl#"
-     xml:base="http://virtualflybrain.org/data/VFB/OWL/vfb_drivers.owl"
+<rdf:RDF xmlns="http://virtualflybrain.org/data/VFB/OWL/VFB_drivers.owl#"
+     xml:base="http://virtualflybrain.org/data/VFB/OWL/VFB_drivers.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -10,12 +10,12 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
-    <owl:Ontology rdf:about="http://virtualflybrain.org/data/VFB/OWL/vfb_drivers.owl">
+    <owl:Ontology rdf:about="http://virtualflybrain.org/data/VFB/OWL/VFB_drivers.owl">
         <dc:description>An ontology of Drosophila melanogaster drivers and expression patterns. All genetic objects are created using data taken directly from FlyBase.</dc:description>
         <dc:title>VFB Driver Ontology</dc:title>
         <terms:contributor>http://orcid.org/0000-0002-1373-1705</terms:contributor>
         <terms:license>https://creativecommons.org/licenses/by/4.0/</terms:license>
-        <oboInOwl:date>15:07:2024 01:20</oboInOwl:date>
+        <oboInOwl:date>15:07:2024 11:03</oboInOwl:date>
         <owl:versionInfo>2024-07-15</owl:versionInfo>
     </owl:Ontology>
     

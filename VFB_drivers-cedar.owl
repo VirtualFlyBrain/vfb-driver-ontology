@@ -16,7 +16,7 @@
         <dc:title>VFB Driver Ontology</dc:title>
         <terms:contributor>http://orcid.org/0000-0002-1373-1705</terms:contributor>
         <terms:license>https://creativecommons.org/licenses/by/4.0/</terms:license>
-        <oboInOwl:date>15:07:2024 01:20</oboInOwl:date>
+        <oboInOwl:date>15:07:2024 11:03</oboInOwl:date>
         <rdfs:comment>This release artefact does not contain the &apos;has hemidriver&apos; relationships and may not be suitable for most users.</rdfs:comment>
         <owl:versionInfo>2024-07-15</owl:versionInfo>
     </owl:Ontology>

@@ -34,7 +34,7 @@ $(SRC): $(TMPDIR)/FB_data.tsv $(TMPDIR)/template.tsv
 
 $(ONT).owl: $(ONT)-full.owl
 	grep -v owl:versionIRI $< > $@.tmp.owl
-	$(ROBOT) annotate -i $@.tmp.owl --ontology-iri http://virtualflybrain.org/data/VFB/OWL/vfb_drivers.owl \
+	$(ROBOT) annotate -i $@.tmp.owl --ontology-iri http://virtualflybrain.org/data/VFB/OWL/VFB_drivers.owl \
 		convert -o $@.tmp.owl && mv $@.tmp.owl $@
 
 LATEST_RELEASE = http://raw.githubusercontent.com/VirtualFlyBrain/vfb-driver-ontology/master/VFB_drivers.owl

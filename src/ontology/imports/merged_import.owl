@@ -7,8 +7,8 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/VFB_drivers/imports/merged_import.owl>
-<http://purl.obolibrary.org/obo/VFB_drivers/releases/2024-08-05/imports/merged_import.owl>
-Annotation(owl:versionInfo "2024-08-05")
+<http://purl.obolibrary.org/obo/VFB_drivers/releases/2024-08-12/imports/merged_import.owl>
+Annotation(owl:versionInfo "2024-08-12")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_10000000>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBcv_0000000>))
@@ -69,7 +69,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FBcv_0005001> <http://purl.obolibrary
 
 # Class: <http://purl.obolibrary.org/obo/FBcv_0005051> (split system component)
 
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "FBC:GM") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FBcv_0005051> "Component that forms part of a 'split system'. A split system component corresponds to a non-functional fragment of a functional experimental tool that would normally be encoded by a single gene product. When combined with another appropriate split system component in vivo, a functional experimental tool is produced. The fragments of a split system can be brought together in vivo in a number of different ways; for example, by fusing fragments to peptides that physically interact in vivo.")
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "FBC:GM") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FBcv_0005051> "Component that forms part of a 'split system'. A split system component corresponds to a non-functional fragment of a functional experimental tool. When combined with another appropriate split system component in vivo, a functional experimental tool is produced. The fragments of a split system can be brought together in vivo in a number of different ways; for example, by fusing fragments to peptides that physically interact in vivo.")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FBcv_0005051> <http://orcid.org/0000-0002-0027-0858>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBcv_0005051> "split system component")
 SubClassOf(<http://purl.obolibrary.org/obo/FBcv_0005051> <http://purl.obolibrary.org/obo/FBcv_0005001>)

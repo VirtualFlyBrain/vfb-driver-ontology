@@ -11,14 +11,14 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/VFB_drivers/VFB_drivers-cedar.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/VFB_drivers/releases/2024-08-05/VFB_drivers-cedar.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/VFB_drivers/releases/2024-08-12/VFB_drivers-cedar.owl"/>
         <dc:description>An ontology of Drosophila melanogaster drivers and expression patterns. All genetic objects are created using data taken directly from FlyBase.</dc:description>
         <dc:title>VFB Driver Ontology</dc:title>
         <terms:contributor>http://orcid.org/0000-0002-1373-1705</terms:contributor>
         <terms:license>https://creativecommons.org/licenses/by/4.0/</terms:license>
-        <oboInOwl:date>05:08:2024 01:21</oboInOwl:date>
+        <oboInOwl:date>12:08:2024 01:22</oboInOwl:date>
         <rdfs:comment>This release artefact does not contain the &apos;has hemidriver&apos; relationships and may not be suitable for most users.</rdfs:comment>
-        <owl:versionInfo>2024-08-05</owl:versionInfo>
+        <owl:versionInfo>2024-08-12</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -51659,14 +51659,14 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0005051">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0005001"/>
-        <obo:IAO_0000115>Component that forms part of a &apos;split system&apos;. A split system component corresponds to a non-functional fragment of a functional experimental tool that would normally be encoded by a single gene product. When combined with another appropriate split system component in vivo, a functional experimental tool is produced. The fragments of a split system can be brought together in vivo in a number of different ways; for example, by fusing fragments to peptides that physically interact in vivo.</obo:IAO_0000115>
+        <obo:IAO_0000115>Component that forms part of a &apos;split system&apos;. A split system component corresponds to a non-functional fragment of a functional experimental tool. When combined with another appropriate split system component in vivo, a functional experimental tool is produced. The fragments of a split system can be brought together in vivo in a number of different ways; for example, by fusing fragments to peptides that physically interact in vivo.</obo:IAO_0000115>
         <terms:contributor rdf:resource="http://orcid.org/0000-0002-0027-0858"/>
         <rdfs:label>split system component</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBcv_0005051"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Component that forms part of a &apos;split system&apos;. A split system component corresponds to a non-functional fragment of a functional experimental tool that would normally be encoded by a single gene product. When combined with another appropriate split system component in vivo, a functional experimental tool is produced. The fragments of a split system can be brought together in vivo in a number of different ways; for example, by fusing fragments to peptides that physically interact in vivo.</owl:annotatedTarget>
+        <owl:annotatedTarget>Component that forms part of a &apos;split system&apos;. A split system component corresponds to a non-functional fragment of a functional experimental tool. When combined with another appropriate split system component in vivo, a functional experimental tool is produced. The fragments of a split system can be brought together in vivo in a number of different ways; for example, by fusing fragments to peptides that physically interact in vivo.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FBC:GM</oboInOwl:hasDbXref>
     </owl:Axiom>
     

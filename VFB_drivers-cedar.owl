@@ -11,14 +11,14 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/VFB_drivers/VFB_drivers-cedar.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/VFB_drivers/releases/2024-09-09/VFB_drivers-cedar.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/VFB_drivers/releases/2024-09-16/VFB_drivers-cedar.owl"/>
         <dc:description>An ontology of Drosophila melanogaster drivers and expression patterns. All genetic objects are created using data taken directly from FlyBase.</dc:description>
         <dc:title>VFB Driver Ontology</dc:title>
         <terms:contributor>http://orcid.org/0000-0002-1373-1705</terms:contributor>
         <terms:license>https://creativecommons.org/licenses/by/4.0/</terms:license>
-        <oboInOwl:date>09:09:2024 01:26</oboInOwl:date>
+        <oboInOwl:date>16:09:2024 01:37</oboInOwl:date>
         <rdfs:comment>This release artefact does not contain the &apos;has hemidriver&apos; relationships and may not be suitable for most users.</rdfs:comment>
-        <owl:versionInfo>2024-09-09</owl:versionInfo>
+        <owl:versionInfo>2024-09-16</owl:versionInfo>
     </owl:Ontology>
     
 

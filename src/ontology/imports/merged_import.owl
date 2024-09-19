@@ -7,8 +7,8 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/VFB_drivers/imports/merged_import.owl>
-<http://purl.obolibrary.org/obo/VFB_drivers/releases/2024-09-16/imports/merged_import.owl>
-Annotation(owl:versionInfo "2024-09-16")
+<http://purl.obolibrary.org/obo/VFB_drivers/releases/2024-09-19/imports/merged_import.owl>
+Annotation(owl:versionInfo "2024-09-19")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_10000000>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBcv_0000000>))
@@ -42,6 +42,7 @@ Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#sav
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:17088209") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008> "A relationship between an interesctional expression pattern and one of the hemidrivers that contributes to driving its expression.  For example, the split-GAL4 system drives expression using transgenes encoding a pair of interacting proteins, one with a GAL4 DNA binding domain and one with an transcription activation domain.  In cells that co-express these two transgenes, interaction between the two proteins reconsitutes a transcription factor, driving expression from transgenes under the control o f UAS enhancer/promoter elements.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008> "has hemidriver"@en)
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008> <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010>)
 
 
 

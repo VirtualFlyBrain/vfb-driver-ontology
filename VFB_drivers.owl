@@ -15,8 +15,8 @@
         <dc:title>VFB Driver Ontology</dc:title>
         <terms:contributor>http://orcid.org/0000-0002-1373-1705</terms:contributor>
         <terms:license>https://creativecommons.org/licenses/by/4.0/</terms:license>
-        <oboInOwl:date>07:10:2024 01:39</oboInOwl:date>
-        <owl:versionInfo>2024-10-07</owl:versionInfo>
+        <oboInOwl:date>14:10:2024 01:39</oboInOwl:date>
+        <owl:versionInfo>2024-10-14</owl:versionInfo>
     </owl:Ontology>
     
 

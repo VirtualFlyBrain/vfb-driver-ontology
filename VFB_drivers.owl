@@ -15,8 +15,8 @@
         <dc:title>VFB Driver Ontology</dc:title>
         <terms:contributor>http://orcid.org/0000-0002-1373-1705</terms:contributor>
         <terms:license>https://creativecommons.org/licenses/by/4.0/</terms:license>
-        <oboInOwl:date>14:10:2024 01:39</oboInOwl:date>
-        <owl:versionInfo>2024-10-14</owl:versionInfo>
+        <oboInOwl:date>21:10:2024 01:39</oboInOwl:date>
+        <owl:versionInfo>2024-10-21</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -258,12 +258,13 @@
     <owl:Class rdf:about="http://flybase.org/reports/FBal0243326">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0005055"/>
         <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>HsimVP16[AD-VGlut-OK371]</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>HsimVP16[AD.VGlut.OK371.T:ZzzzZip+,T:SV40nls-largeT]</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>HsimVP16[AD.VGlut.OK371.T:ZzzzZipEERRL,T:SV40nls2]</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>HsimVP16[VGlut-OK371-dVP16AD]</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>VGlut[dVP16.AD]</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>vGlut[dVP16-AD]</oboInOwl:hasExactSynonym>
-        <rdfs:label>HsimVP16[AD-VGlut-OK371]</rdfs:label>
+        <rdfs:label>HsimVP16[AD-VGlut1-OK371]</rdfs:label>
     </owl:Class>
     
 
@@ -662,8 +663,9 @@
     <owl:Class rdf:about="http://flybase.org/reports/FBal0304262">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0005054"/>
         <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>ScerGAL4[VGlut-MI04979-TG4DBD.2]</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>VGlut[DBD]</oboInOwl:hasExactSynonym>
-        <rdfs:label>ScerGAL4[VGlut-MI04979-TG4DBD.2]</rdfs:label>
+        <rdfs:label>ScerGAL4[VGlut1-MI04979-TG4DBD.2]</rdfs:label>
     </owl:Class>
     
 
@@ -674,6 +676,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0005054"/>
         <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>ChAT[DBD]</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>ChAT[MI04508-TG4DBD]</oboInOwl:hasExactSynonym>
         <rdfs:label>ScerGAL4[ChAT-MI04508-TG4DBD.0]</rdfs:label>
     </owl:Class>
     
@@ -23637,8 +23640,9 @@
     <owl:Class rdf:about="http://flybase.org/reports/FBal0350285">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0005055"/>
         <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>HsapRELA[VGlut-MI04979-Tp65AD.2]</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>VGlut[AD]</oboInOwl:hasExactSynonym>
-        <rdfs:label>HsapRELA[VGlut-MI04979-Tp65AD.2]</rdfs:label>
+        <rdfs:label>HsapRELA[VGlut1-MI04979-Tp65AD.2]</rdfs:label>
     </owl:Class>
     
 
@@ -65262,7 +65266,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
-        <rdfs:label>ScerGAL4[DBD.ort.C1-3]∩HsimVP16[AD-VGlut-OK371]</rdfs:label>
+        <oboInOwl:hasExactSynonym>ScerGAL4[DBD.ort.C1-3]INTERSECTIONHsimVP16[AD-VGlut-OK371]</oboInOwl:hasExactSynonym>
+        <rdfs:label>ScerGAL4[DBD.ort.C1-3]∩HsimVP16[AD-VGlut1-OK371]</rdfs:label>
     </owl:Class>
     
 
@@ -65777,8 +65782,9 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>ScerGAL4[DBD.C1a.ort]INTERSECTIONHsimVP16[AD-VGlut-OK371]</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>ortC1a∩ ok371-dVP16</oboInOwl:hasExactSynonym>
-        <rdfs:label>ScerGAL4[DBD.C1a.ort]∩HsimVP16[AD-VGlut-OK371]</rdfs:label>
+        <rdfs:label>ScerGAL4[DBD.C1a.ort]∩HsimVP16[AD-VGlut1-OK371]</rdfs:label>
     </owl:Class>
     
 
@@ -66611,7 +66617,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
-        <rdfs:label>ScerGAL4[DBD.ort.C2]∩HsimVP16[AD-VGlut-OK371]</rdfs:label>
+        <oboInOwl:hasExactSynonym>ScerGAL4[DBD.ort.C2]INTERSECTIONHsimVP16[AD-VGlut-OK371]</oboInOwl:hasExactSynonym>
+        <rdfs:label>ScerGAL4[DBD.ort.C2]∩HsimVP16[AD-VGlut1-OK371]</rdfs:label>
     </owl:Class>
     
 
@@ -67250,7 +67257,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
-        <rdfs:label>EcollexA[DBD.C1a.ort]∩HsimVP16[AD-VGlut-OK371]</rdfs:label>
+        <oboInOwl:hasExactSynonym>EcollexA[DBD.C1a.ort]INTERSECTIONHsimVP16[AD-VGlut-OK371]</oboInOwl:hasExactSynonym>
+        <rdfs:label>EcollexA[DBD.C1a.ort]∩HsimVP16[AD-VGlut1-OK371]</rdfs:label>
     </owl:Class>
     
 
@@ -67761,7 +67769,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
-        <rdfs:label>ScerGAL4[dsx-GAL4-DBD]∩HsimVP16[AD-VGlut-OK371]</rdfs:label>
+        <oboInOwl:hasExactSynonym>ScerGAL4[dsx-GAL4-DBD]INTERSECTIONHsimVP16[AD-VGlut-OK371]</oboInOwl:hasExactSynonym>
+        <rdfs:label>ScerGAL4[dsx-GAL4-DBD]∩HsimVP16[AD-VGlut1-OK371]</rdfs:label>
     </owl:Class>
     
 
@@ -73465,8 +73474,9 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>ScerGAL4[VGlut-MI04979-TG4DBD.2]INTERSECTIONHsapRELA[AD.Tdc2]</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Tdc2/vGlut</oboInOwl:hasExactSynonym>
-        <rdfs:label>ScerGAL4[VGlut-MI04979-TG4DBD.2]∩HsapRELA[AD.Tdc2]</rdfs:label>
+        <rdfs:label>ScerGAL4[VGlut1-MI04979-TG4DBD.2]∩HsapRELA[AD.Tdc2]</rdfs:label>
     </owl:Class>
     
 
@@ -74870,7 +74880,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
-        <rdfs:label>ScerGAL4[VGlut-MI04979-TG4DBD.2]∩HsapRELA[unc-4-AD]</rdfs:label>
+        <oboInOwl:hasExactSynonym>ScerGAL4[VGlut-MI04979-TG4DBD.2]INTERSECTIONHsapRELA[unc-4-AD]</oboInOwl:hasExactSynonym>
+        <rdfs:label>ScerGAL4[VGlut1-MI04979-TG4DBD.2]∩HsapRELA[unc-4-AD]</rdfs:label>
     </owl:Class>
     
 
@@ -76426,7 +76437,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
-        <rdfs:label>ScerGAL4[DBD.VT008681]∩HsapRELA[VGlut-MI04979-Tp65AD.2]</rdfs:label>
+        <oboInOwl:hasExactSynonym>ScerGAL4[DBD.VT008681]INTERSECTIONHsapRELA[VGlut-MI04979-Tp65AD.2]</oboInOwl:hasExactSynonym>
+        <rdfs:label>ScerGAL4[DBD.VT008681]∩HsapRELA[VGlut1-MI04979-Tp65AD.2]</rdfs:label>
     </owl:Class>
     
 
@@ -77047,7 +77059,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
-        <rdfs:label>ScerGAL4[VGlut-MI04979-TG4DBD.2]∩HsapRELA[AD.R23C09]</rdfs:label>
+        <oboInOwl:hasExactSynonym>ScerGAL4[VGlut-MI04979-TG4DBD.2]INTERSECTIONHsapRELA[AD.R23C09]</oboInOwl:hasExactSynonym>
+        <rdfs:label>ScerGAL4[VGlut1-MI04979-TG4DBD.2]∩HsapRELA[AD.R23C09]</rdfs:label>
     </owl:Class>
     
 

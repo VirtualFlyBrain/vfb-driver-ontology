@@ -17,6 +17,8 @@ get_flybase_data: | $(TMPDIR)
 	apt-get -y install postgresql-client
 	psql -h chado.flybase.org -U flybase flybase -f ../sql/FBco_query.sql > $(TMPDIR)/FBco_data.tsv
 	psql -h chado.flybase.org -U flybase flybase -f ../sql/expression_allele_query.sql > $(TMPDIR)/FBal_data.tsv
+	python3 $(SCRIPTSDIR)/print_extra_allele_query.py &&\
+	psql -h chado.flybase.org -U flybase flybase -f ../sql/extra_allele_query.sql > $(TMPDIR)/extra_allele_data.tsv
 
 $(TMPDIR)/template.tsv: | $(TMPDIR)
 	python3 $(SCRIPTSDIR)/process_FB_data.py &&\

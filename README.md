@@ -5,7 +5,8 @@
 
 The VFB driver ontology is an ontology of Drosophila melanogaster drivers and expression patterns.
 
-Split expression pattern classes are taken from Virtual Fly Brain, where these were created and linked to FlyBase terms for hemidrivers. Hemidriver classes are created using data taken directly from FlyBase. Other driver classes are retrieved from Virtual Fly Brain, which creates these using data from FlyBase.
+All FBco and FBal classes are created using data taken directly from FlyBase.
+If additional alleles are required, they can be added to [additional_alleles.txt](additional_alleles.txt)
 
 ## Versions
 

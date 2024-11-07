@@ -10,6 +10,7 @@ This project was created using the [ontology development kit](https://github.com
 ## Editors Version
 
 Do not edit this ontology manually, it is generated automatically.
+If additional alleles are required, they can be added to [additional_alleles.txt](additional_alleles.txt)
 
 ## ID Ranges
 

@@ -7,8 +7,8 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/VFB_drivers/imports/merged_import.owl>
-<http://purl.obolibrary.org/obo/VFB_drivers/releases/2024-11-04/imports/merged_import.owl>
-Annotation(owl:versionInfo "2024-11-04")
+<http://purl.obolibrary.org/obo/VFB_drivers/releases/2024-11-06/imports/merged_import.owl>
+Annotation(owl:versionInfo "2024-11-06")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_10000000>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBcv_0000000>))
@@ -18,9 +18,21 @@ Declaration(Class(<http://purl.obolibrary.org/obo/FBcv_0005051>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBcv_0005054>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBcv_0005055>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBcv_0009027>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SO_0000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/SO_0000110>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SO_0000704>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SO_0001023>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SO_0001059>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SO_0001260>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SO_0001411>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SO_0001507>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SO_0002072>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SO_0005855>))
 Declaration(Class(<http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/so#has_part>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/so#member_of>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/so#variant_of>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000700>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/description>))
@@ -96,6 +108,13 @@ AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibra
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBcv_0009027> "split driver fragment")
 SubClassOf(<http://purl.obolibrary.org/obo/FBcv_0009027> <http://purl.obolibrary.org/obo/FBcv_0005051>)
 
+# Class: <http://purl.obolibrary.org/obo/SO_0000001> (region)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "SO:ke") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SO_0000001> "A sequence_feature with an extent greater than zero. A nucleotide region is composed of bases and a polypeptide region is composed of amino acids.")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SO_0000001> "sequence")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SO_0000001> "region")
+SubClassOf(<http://purl.obolibrary.org/obo/SO_0000001> <http://purl.obolibrary.org/obo/SO_0000110>)
+
 # Class: <http://purl.obolibrary.org/obo/SO_0000110> (sequence_feature)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "LAMHDI:mb") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "SO:ke") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SO_0000110> "Any extent of continuous biological sequence.")
@@ -105,6 +124,70 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SO_0000110> "located_sequence_feature")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SO_0000110> "sequence feature")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SO_0000110> "sequence_feature")
+
+# Class: <http://purl.obolibrary.org/obo/SO_0000704> (gene)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "SO:immuno_workshop") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SO_0000704> "A region (or regions) that includes all of the sequence elements necessary to encode a functional transcript. A gene may include regulatory regions, transcribed regions and/or other functional sequence regions.")
+AnnotationAssertion(Annotation(rdfs:label "wiki") <http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/SO_0000704> "http://en.wikipedia.org/wiki/Gene")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SO_0000704> "INSDC_feature:gene")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SO_0000704> "gene")
+SubClassOf(<http://purl.obolibrary.org/obo/SO_0000704> <http://purl.obolibrary.org/obo/SO_0001411>)
+SubClassOf(<http://purl.obolibrary.org/obo/SO_0000704> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/so#member_of> <http://purl.obolibrary.org/obo/SO_0005855>))
+
+# Class: <http://purl.obolibrary.org/obo/SO_0001023> (allele)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "SO:immuno_workshop") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SO_0001023> "An allele is one of a set of coexisting sequence variants of a gene.")
+AnnotationAssertion(Annotation(rdfs:label "wiki") <http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/SO_0001023> "http://en.wikipedia.org/wiki/Allele")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SO_0001023> "allelomorph")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SO_0001023> "allele")
+SubClassOf(<http://purl.obolibrary.org/obo/SO_0001023> <http://purl.obolibrary.org/obo/SO_0001507>)
+SubClassOf(<http://purl.obolibrary.org/obo/SO_0001023> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/so#variant_of> <http://purl.obolibrary.org/obo/SO_0000704>))
+
+# Class: <http://purl.obolibrary.org/obo/SO_0001059> (sequence_alteration)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "SO:ke") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SO_0001059> "A sequence_alteration is a sequence_feature whose extent is the deviation from another sequence.")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SO_0001059> "INSDC_feature:variation")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SO_0001059> "INSDC_note:sequence_alteration")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SO_0001059> "sequence alteration")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SO_0001059> "sequence_alteration")
+SubClassOf(<http://purl.obolibrary.org/obo/SO_0001059> <http://purl.obolibrary.org/obo/SO_0002072>)
+
+# Class: <http://purl.obolibrary.org/obo/SO_0001260> (sequence_collection)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "SO:ke") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SO_0001260> "A collection of discontinuous sequences.")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SO_0001260> "sequence collection")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SO_0001260> "sequence_collection")
+
+# Class: <http://purl.obolibrary.org/obo/SO_0001411> (biological_region)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "SO:cb") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SO_0001411> "A region defined by its disposition to be involved in a biological process.")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SO_0001411> "INSDC_note:biological_region")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SO_0001411> "biological region")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SO_0001411> "biological_region")
+SubClassOf(<http://purl.obolibrary.org/obo/SO_0001411> <http://purl.obolibrary.org/obo/SO_0000001>)
+
+# Class: <http://purl.obolibrary.org/obo/SO_0001507> (variant_collection)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "SO:ke") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SO_0001507> "A collection of one or more sequences of an individual.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SO_0001507> "variant_collection")
+EquivalentClasses(<http://purl.obolibrary.org/obo/SO_0001507> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/SO_0001260> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/so#has_part> <http://purl.obolibrary.org/obo/SO_0001059>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SO_0001507> <http://purl.obolibrary.org/obo/SO_0001260>)
+SubClassOf(<http://purl.obolibrary.org/obo/SO_0001507> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/so#has_part> <http://purl.obolibrary.org/obo/SO_0001059>))
+
+# Class: <http://purl.obolibrary.org/obo/SO_0002072> (sequence_comparison)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SO_0002072> "A position or feature where two sequences have been compared.")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SO_0002072> "INSDC_note:sequence_comparison")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SO_0002072> "sequence comparison")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SO_0002072> "sequence_comparison")
+SubClassOf(<http://purl.obolibrary.org/obo/SO_0002072> <http://purl.obolibrary.org/obo/SO_0000110>)
+
+# Class: <http://purl.obolibrary.org/obo/SO_0005855> (gene_group)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "SO:ma") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SO_0005855> "A collection of related genes.")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SO_0005855> "gene group")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SO_0005855> "gene_group")
+SubClassOf(<http://purl.obolibrary.org/obo/SO_0005855> <http://purl.obolibrary.org/obo/SO_0001411>)
 
 # Class: <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010> (intersectional expression pattern)
 

@@ -11,16 +11,18 @@ prepare_release: all $(ONT)-cedar.owl $(REPORTDIR)/robot_diff.txt
 
 CLEANFILES:=$(CLEANFILES) $(ONT)-cedar.owl $(IMPORTDIR)/*_terms_combined.txt
 
-$(TMPDIR)/FB_data.tsv: | $(TMPDIR)
+.PHONY: get_flybase_data
+get_flybase_data: | $(TMPDIR)
 	apt-get update
 	apt-get -y install postgresql-client
-	psql -h chado.flybase.org -U flybase flybase -f ../sql/FB_query.sql > $(TMPDIR)/FB_data.tsv
+	psql -h chado.flybase.org -U flybase flybase -f ../sql/FBco_query.sql > $(TMPDIR)/FBco_data.tsv
+	psql -h chado.flybase.org -U flybase flybase -f ../sql/expression_allele_query.sql > $(TMPDIR)/FBal_data.tsv
 
 $(TMPDIR)/template.tsv: | $(TMPDIR)
 	python3 $(SCRIPTSDIR)/process_FB_data.py &&\
 	python3 $(SCRIPTSDIR)/make_template.py
 
-$(SRC): $(TMPDIR)/FB_data.tsv $(TMPDIR)/template.tsv
+$(SRC): get_flybase_data $(TMPDIR)/template.tsv
 	$(ROBOT) template \
 	--merge-before \
 	--input VFB_drivers-annotations.ofn \

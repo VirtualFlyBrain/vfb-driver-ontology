@@ -2,19 +2,26 @@ import pandas as pd
 from oaklib import get_adapter
 import re
 
-FB_data = pd.read_csv('tmp/FB_data.tsv', sep='\t', low_memory=False)
+FB_data = pd.read_csv('tmp/FBco_data.tsv', sep='\t', low_memory=False)
+FBal_data = pd.read_csv('tmp/FBal_data.tsv', sep='\t', low_memory=False)
 
 # check that each FBco has at least two alleles (rows)
 # NB not restricting to exactly two
 if len(FB_data[~FB_data['combo_id'].duplicated(keep=False)]) > 0:
     raise ValueError('Single allele combinations present:', FB_data[~FB_data['combo_id'].duplicated(keep=False)]['combo_id'].to_list())
 
+# drop alleles that are duplicated between FB_data and FBal_data
+FBal_data = FBal_data[~FBal_data['allele_id'].isin(FB_data['allele_id'])]
+
 # Check that only one label per FBco and FBal
 if len(FB_data[FB_data['combo_name'].str.contains('\|')]) > 0:
     raise ValueError('Multiple labels for combination:', FB_data[FB_data['combo_name'].str.contains('\|')][['combo_id', 'combo_name']])
 
 if len(FB_data[FB_data['allele_name'].str.contains('\|')]) > 0:
-    raise ValueError('Multiple labels for combination:', FB_data[FB_data['allele_name'].str.contains('\|')][['allele_id', 'allele_name']])
+    raise ValueError('Multiple labels for allele:', FB_data[FB_data['allele_name'].str.contains('\|')][['allele_id', 'allele_name']])
+
+if len(FBal_data[FBal_data['allele_name'].str.contains('\|')]) > 0:
+    raise ValueError('Multiple labels for allele:', FBal_data[FBal_data['allele_name'].str.contains('\|')][['allele_id', 'allele_name']])
 
 # remove any synonyms that are duplicates of the label
 def process_synonyms(object_name: str, synonyms: str):
@@ -28,6 +35,7 @@ def process_synonyms(object_name: str, synonyms: str):
 
 FB_data['combo_synonyms'] = FB_data.apply(lambda x: process_synonyms(x.combo_name, x.combo_synonyms), axis=1)
 FB_data['allele_synonyms'] = FB_data.apply(lambda x: process_synonyms(x.allele_name, x.allele_synonyms), axis=1)
+FBal_data['allele_synonyms'] = FBal_data.apply(lambda x: process_synonyms(x.allele_name, x.allele_synonyms), axis=1)
 
 # replace INTERSECTION with symbol in split names
 FB_data['combo_name'] = FB_data['combo_name'].map(lambda x: x.replace('INTERSECTION', '∩'))
@@ -86,4 +94,5 @@ def choose_symbol(synonyms: str):
 
 FB_data['combo_symbol'] = FB_data.apply(lambda x: choose_symbol(x.combo_synonyms), axis=1)
 
-FB_data.to_csv('tmp/FB_data_processed.tsv', sep='\t', index=None)
+FB_data.to_csv('tmp/FBco_data_processed.tsv', sep='\t', index=None)
+FBal_data.to_csv('tmp/FBal_data_processed.tsv', sep='\t', index=None)

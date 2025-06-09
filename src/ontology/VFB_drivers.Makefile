@@ -33,6 +33,7 @@ $(SRC): get_flybase_data $(TMPDIR)/template.tsv
 	--template $(TMPDIR)/template.tsv \
 	--include-annotations true \
 	--collapse-import-closure false \
+	convert -f ofn \
 	--output $@ &&\
 	echo "\nOntology source file updated!\n"
 

@@ -18,4 +18,3 @@ WHERE {
   FILTER(isIRI(?term) && (STRSTARTS(str(?term), "http://virtualflybrain.org/reports/VFBexp_") || STRSTARTS(str(?term), "http://flybase.org/reports/")))
   FILTER (!isIRI(?value))
 }
-

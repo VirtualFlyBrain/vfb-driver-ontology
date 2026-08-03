@@ -7,10 +7,10 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/VFB_drivers/imports/merged_import.owl>
-<http://purl.obolibrary.org/obo/VFB_drivers/releases/2026-07-27/imports/merged_import.owl>
-Annotation(owl:versionInfo "2026-07-27")
+<http://purl.obolibrary.org/obo/VFB_drivers/releases/2026-08-03/imports/merged_import.owl>
+Annotation(owl:versionInfo "2026-08-03")
 
-Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_10000000>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00007016>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBcv_0000000>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBcv_0000013>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBcv_0005001>))
@@ -187,7 +187,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/SO_0005855> <http://purl.obolibrary.o
 # Class: <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010> (intersectional expression pattern)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010> "intersectional expression pattern"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010> <http://purl.obolibrary.org/obo/FBbt_10000000>)
+SubClassOf(<http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010> <http://purl.obolibrary.org/obo/FBbt_00007016>)
 
 
 )

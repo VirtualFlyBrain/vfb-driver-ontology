@@ -15,8 +15,8 @@
         <dc:title>VFB Driver Ontology</dc:title>
         <terms:contributor>http://orcid.org/0000-0002-1373-1705</terms:contributor>
         <terms:license>https://creativecommons.org/licenses/by/4.0/</terms:license>
-        <oboInOwl:date>27:07:2026 03:31</oboInOwl:date>
-        <owl:versionInfo>2026-07-27</owl:versionInfo>
+        <oboInOwl:date>03:08:2026 03:22</oboInOwl:date>
+        <owl:versionInfo>2026-08-03</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -257897,9 +257897,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/FBbt_10000000 -->
+    <!-- http://purl.obolibrary.org/obo/FBbt_00007016 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_10000000"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00007016"/>
     
 
 
@@ -258229,7 +258229,7 @@
     <!-- http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_10000000"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007016"/>
         <rdfs:label xml:lang="en">intersectional expression pattern</rdfs:label>
     </owl:Class>
 </rdf:RDF>

@@ -60,7 +60,7 @@ FBco_data['tool_fbcv'] = FBco_data.apply(lambda x: join_direct_and_indirect(x.al
 FBco_data = FBco_data.drop(['direct_tool_id', 'indirect_tool_id', 'direct_tool_fbcv', 'indirect_tool_fbcv'], axis=1)
 
 # remove any FBcv terms that are not SC FBcv_0009027 'split driver fragment'
-FBcv_adapter = get_adapter("sqlite:obo:fbcv")
+FBcv_adapter = get_adapter("sqlite:tmp/fbcv.db")
 split_IDs = [i for i in FBcv_adapter.descendants('FBcv:0009027')]
 
 def process_split_cv_terms(cv_terms: str, allele_ID: str, ID_list=split_IDs):

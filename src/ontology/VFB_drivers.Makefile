@@ -20,7 +20,14 @@ get_flybase_data: | $(TMPDIR)
 	python3 $(SCRIPTSDIR)/print_extra_allele_query.py &&\
 	psql -h chado.flybase.org -U flybase flybase -f ../sql/extra_allele_query.sql > $(TMPDIR)/extra_allele_data.tsv
 
-$(TMPDIR)/template.tsv: | $(TMPDIR)
+# semantic-sql databases moved from S3 to semanticsql.berkeleybop.io; the OAK in the
+# ODK image still uses the old (now 403) S3 URL, so fetch the db directly.
+# A browser-like User-Agent is required by the CDN.
+$(TMPDIR)/fbcv.db: | $(TMPDIR)
+	curl -fL -A "Mozilla/5.0" https://semanticsql.berkeleybop.io/fbcv.db.gz -o $@.gz &&\
+	gunzip -f $@.gz
+
+$(TMPDIR)/template.tsv: $(TMPDIR)/fbcv.db | $(TMPDIR)
 	python3 $(SCRIPTSDIR)/process_FB_data.py &&\
 	python3 $(SCRIPTSDIR)/make_template.py
 

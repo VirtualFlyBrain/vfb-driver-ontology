@@ -7,8 +7,8 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/VFB_drivers/imports/merged_import.owl>
-<http://purl.obolibrary.org/obo/VFB_drivers/releases/2026-08-24/imports/merged_import.owl>
-Annotation(owl:versionInfo "2026-08-24")
+<http://purl.obolibrary.org/obo/VFB_drivers/releases/2026-10-02/imports/merged_import.owl>
+Annotation(owl:versionInfo "2026-10-02")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00007016>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBcv_0000000>))
@@ -29,6 +29,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/SO_0001507>))
 Declaration(Class(<http://purl.obolibrary.org/obo/SO_0002072>))
 Declaration(Class(<http://purl.obolibrary.org/obo/SO_0005855>))
 Declaration(Class(<http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010>))
+Declaration(Class(<http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000100>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/so#has_part>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/so#member_of>))
@@ -47,7 +48,8 @@ Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#has
 
 # Object Property: <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008> (has hemidriver)
 
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:17088209") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008> "A relationship between an interesctional expression pattern and one of the hemidrivers that contributes to driving its expression.  For example, the split-GAL4 system drives expression using transgenes encoding a pair of interacting proteins, one with a GAL4 DNA binding domain and one with an transcription activation domain.  In cells that co-express these two transgenes, interaction between the two proteins reconsitutes a transcription factor, driving expression from transgenes under the control o f UAS enhancer/promoter elements.")
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:17088209") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008> "A relationship between an interesctional expression pattern and one of the hemidrivers that contributes to driving its expression. For example, the split-GAL4 system drives expression using transgenes encoding a pair of interacting proteins, one with a GAL4 DNA binding domain and one with an transcription activation domain. In cells that co-express these two transgenes, interaction between the two proteins reconsitutes a transcription factor, driving expression from transgenes under the control of UAS enhancer/promoter elements.")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008> <https://orcid.org/0000-0002-7073-9172>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008> "has hemidriver"@en)
 ObjectPropertyDomain(<http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008> <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010>)
 
@@ -186,8 +188,17 @@ SubClassOf(<http://purl.obolibrary.org/obo/SO_0005855> <http://purl.obolibrary.o
 
 # Class: <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010> (intersectional expression pattern)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010> "An expression pattern that depends upon the combined synthesis of multiple components, which drive expression only when combined within the same cell (e.g. split-GAL4).")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010> <https://orcid.org/0000-0002-7073-9172>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010> "intersectional expression pattern"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010> <http://purl.obolibrary.org/obo/FBbt_00007016>)
+SubClassOf(<http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010> <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000100>)
+
+# Class: <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000100> (expression pattern)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000100> "All cells within a single organism in which expression of some genetic entity occurs.")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000100> <https://orcid.org/0000-0002-1373-1705>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000100> "expression pattern"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000100> <http://purl.obolibrary.org/obo/FBbt_00007016>)
 
 
 )

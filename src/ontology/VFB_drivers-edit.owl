@@ -41,6 +41,7 @@ Declaration(Class(<http://flybase.org/reports/FBal0028949>))
 Declaration(Class(<http://flybase.org/reports/FBal0028950>))
 Declaration(Class(<http://flybase.org/reports/FBal0028957>))
 Declaration(Class(<http://flybase.org/reports/FBal0030011>))
+Declaration(Class(<http://flybase.org/reports/FBal0030457>))
 Declaration(Class(<http://flybase.org/reports/FBal0030716>))
 Declaration(Class(<http://flybase.org/reports/FBal0030743>))
 Declaration(Class(<http://flybase.org/reports/FBal0030744>))
@@ -48,10 +49,13 @@ Declaration(Class(<http://flybase.org/reports/FBal0030745>))
 Declaration(Class(<http://flybase.org/reports/FBal0030747>))
 Declaration(Class(<http://flybase.org/reports/FBal0030749>))
 Declaration(Class(<http://flybase.org/reports/FBal0030938>))
+Declaration(Class(<http://flybase.org/reports/FBal0031447>))
 Declaration(Class(<http://flybase.org/reports/FBal0031491>))
+Declaration(Class(<http://flybase.org/reports/FBal0031616>))
 Declaration(Class(<http://flybase.org/reports/FBal0032351>))
 Declaration(Class(<http://flybase.org/reports/FBal0032352>))
 Declaration(Class(<http://flybase.org/reports/FBal0032353>))
+Declaration(Class(<http://flybase.org/reports/FBal0032646>))
 Declaration(Class(<http://flybase.org/reports/FBal0034210>))
 Declaration(Class(<http://flybase.org/reports/FBal0034212>))
 Declaration(Class(<http://flybase.org/reports/FBal0034218>))
@@ -723,6 +727,13 @@ Declaration(Class(<http://flybase.org/reports/FBal0042012>))
 Declaration(Class(<http://flybase.org/reports/FBal0042013>))
 Declaration(Class(<http://flybase.org/reports/FBal0042014>))
 Declaration(Class(<http://flybase.org/reports/FBal0042015>))
+Declaration(Class(<http://flybase.org/reports/FBal0042016>))
+Declaration(Class(<http://flybase.org/reports/FBal0042017>))
+Declaration(Class(<http://flybase.org/reports/FBal0042018>))
+Declaration(Class(<http://flybase.org/reports/FBal0042019>))
+Declaration(Class(<http://flybase.org/reports/FBal0042020>))
+Declaration(Class(<http://flybase.org/reports/FBal0042021>))
+Declaration(Class(<http://flybase.org/reports/FBal0042022>))
 Declaration(Class(<http://flybase.org/reports/FBal0042023>))
 Declaration(Class(<http://flybase.org/reports/FBal0042026>))
 Declaration(Class(<http://flybase.org/reports/FBal0042028>))
@@ -2897,7 +2908,6 @@ Declaration(Class(<http://flybase.org/reports/FBal0095775>))
 Declaration(Class(<http://flybase.org/reports/FBal0095798>))
 Declaration(Class(<http://flybase.org/reports/FBal0095807>))
 Declaration(Class(<http://flybase.org/reports/FBal0095914>))
-Declaration(Class(<http://flybase.org/reports/FBal0097113>))
 Declaration(Class(<http://flybase.org/reports/FBal0097122>))
 Declaration(Class(<http://flybase.org/reports/FBal0097124>))
 Declaration(Class(<http://flybase.org/reports/FBal0097130>))
@@ -3546,6 +3556,7 @@ Declaration(Class(<http://flybase.org/reports/FBal0148400>))
 Declaration(Class(<http://flybase.org/reports/FBal0148403>))
 Declaration(Class(<http://flybase.org/reports/FBal0148405>))
 Declaration(Class(<http://flybase.org/reports/FBal0148447>))
+Declaration(Class(<http://flybase.org/reports/FBal0148454>))
 Declaration(Class(<http://flybase.org/reports/FBal0148456>))
 Declaration(Class(<http://flybase.org/reports/FBal0148458>))
 Declaration(Class(<http://flybase.org/reports/FBal0148461>))
@@ -3573,6 +3584,7 @@ Declaration(Class(<http://flybase.org/reports/FBal0150956>))
 Declaration(Class(<http://flybase.org/reports/FBal0150957>))
 Declaration(Class(<http://flybase.org/reports/FBal0150960>))
 Declaration(Class(<http://flybase.org/reports/FBal0150961>))
+Declaration(Class(<http://flybase.org/reports/FBal0150966>))
 Declaration(Class(<http://flybase.org/reports/FBal0150967>))
 Declaration(Class(<http://flybase.org/reports/FBal0150969>))
 Declaration(Class(<http://flybase.org/reports/FBal0150970>))
@@ -3791,6 +3803,7 @@ Declaration(Class(<http://flybase.org/reports/FBal0189860>))
 Declaration(Class(<http://flybase.org/reports/FBal0189868>))
 Declaration(Class(<http://flybase.org/reports/FBal0189870>))
 Declaration(Class(<http://flybase.org/reports/FBal0189886>))
+Declaration(Class(<http://flybase.org/reports/FBal0189889>))
 Declaration(Class(<http://flybase.org/reports/FBal0189896>))
 Declaration(Class(<http://flybase.org/reports/FBal0189900>))
 Declaration(Class(<http://flybase.org/reports/FBal0189905>))
@@ -3815,6 +3828,7 @@ Declaration(Class(<http://flybase.org/reports/FBal0190246>))
 Declaration(Class(<http://flybase.org/reports/FBal0190252>))
 Declaration(Class(<http://flybase.org/reports/FBal0190275>))
 Declaration(Class(<http://flybase.org/reports/FBal0190304>))
+Declaration(Class(<http://flybase.org/reports/FBal0190312>))
 Declaration(Class(<http://flybase.org/reports/FBal0190320>))
 Declaration(Class(<http://flybase.org/reports/FBal0190340>))
 Declaration(Class(<http://flybase.org/reports/FBal0190357>))
@@ -4549,6 +4563,7 @@ Declaration(Class(<http://flybase.org/reports/FBal0245292>))
 Declaration(Class(<http://flybase.org/reports/FBal0246054>))
 Declaration(Class(<http://flybase.org/reports/FBal0246063>))
 Declaration(Class(<http://flybase.org/reports/FBal0246064>))
+Declaration(Class(<http://flybase.org/reports/FBal0246065>))
 Declaration(Class(<http://flybase.org/reports/FBal0246086>))
 Declaration(Class(<http://flybase.org/reports/FBal0246117>))
 Declaration(Class(<http://flybase.org/reports/FBal0246125>))
@@ -7111,6 +7126,7 @@ Declaration(Class(<http://flybase.org/reports/FBal0258638>))
 Declaration(Class(<http://flybase.org/reports/FBal0258671>))
 Declaration(Class(<http://flybase.org/reports/FBal0258672>))
 Declaration(Class(<http://flybase.org/reports/FBal0258681>))
+Declaration(Class(<http://flybase.org/reports/FBal0258693>))
 Declaration(Class(<http://flybase.org/reports/FBal0258696>))
 Declaration(Class(<http://flybase.org/reports/FBal0258697>))
 Declaration(Class(<http://flybase.org/reports/FBal0260606>))
@@ -17586,6 +17602,7 @@ Declaration(Class(<http://flybase.org/reports/FBal0340185>))
 Declaration(Class(<http://flybase.org/reports/FBal0340186>))
 Declaration(Class(<http://flybase.org/reports/FBal0340209>))
 Declaration(Class(<http://flybase.org/reports/FBal0340261>))
+Declaration(Class(<http://flybase.org/reports/FBal0340270>))
 Declaration(Class(<http://flybase.org/reports/FBal0340313>))
 Declaration(Class(<http://flybase.org/reports/FBal0340314>))
 Declaration(Class(<http://flybase.org/reports/FBal0340364>))
@@ -17635,6 +17652,7 @@ Declaration(Class(<http://flybase.org/reports/FBal0341676>))
 Declaration(Class(<http://flybase.org/reports/FBal0341702>))
 Declaration(Class(<http://flybase.org/reports/FBal0341703>))
 Declaration(Class(<http://flybase.org/reports/FBal0341704>))
+Declaration(Class(<http://flybase.org/reports/FBal0341720>))
 Declaration(Class(<http://flybase.org/reports/FBal0341738>))
 Declaration(Class(<http://flybase.org/reports/FBal0341739>))
 Declaration(Class(<http://flybase.org/reports/FBal0341740>))
@@ -18764,6 +18782,7 @@ Declaration(Class(<http://flybase.org/reports/FBal0410724>))
 Declaration(Class(<http://flybase.org/reports/FBal0410725>))
 Declaration(Class(<http://flybase.org/reports/FBal0410726>))
 Declaration(Class(<http://flybase.org/reports/FBal0410727>))
+Declaration(Class(<http://flybase.org/reports/FBal0413938>))
 Declaration(Class(<http://flybase.org/reports/FBco0000001>))
 Declaration(Class(<http://flybase.org/reports/FBco0000002>))
 Declaration(Class(<http://flybase.org/reports/FBco0000003>))
@@ -21447,6 +21466,13 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBal0030011> "PT[KP]")
 SubClassOf(<http://flybase.org/reports/FBal0030011> <http://purl.obolibrary.org/obo/SO_0001023>)
 
+# Class: <http://flybase.org/reports/FBal0030457> (ac[hb.PP])
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://flybase.org/reports/FBal0030457> "FlyBase")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://flybase.org/reports/FBal0030457> "hunchback promoter construct of Parkhurst")
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBal0030457> "ac[hb.PP]")
+SubClassOf(<http://flybase.org/reports/FBal0030457> <http://purl.obolibrary.org/obo/SO_0001023>)
+
 # Class: <http://flybase.org/reports/FBal0030716> (cad[HT.hs])
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://flybase.org/reports/FBal0030716> "FlyBase")
@@ -21505,11 +21531,26 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBal0030938> "cpo[l2]")
 SubClassOf(<http://flybase.org/reports/FBal0030938> <http://purl.obolibrary.org/obo/SO_0001023>)
 
+# Class: <http://flybase.org/reports/FBal0031447> (hry[hb.PP])
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://flybase.org/reports/FBal0031447> "FlyBase")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://flybase.org/reports/FBal0031447> "h[hb.PP]")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://flybase.org/reports/FBal0031447> "hunchback promoter construct of Parkhurst")
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBal0031447> "hry[hb.PP]")
+SubClassOf(<http://flybase.org/reports/FBal0031447> <http://purl.obolibrary.org/obo/SO_0001023>)
+
 # Class: <http://flybase.org/reports/FBal0031491> (hig[P1])
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://flybase.org/reports/FBal0031491> "FlyBase")
 AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBal0031491> "hig[P1]")
 SubClassOf(<http://flybase.org/reports/FBal0031491> <http://purl.obolibrary.org/obo/SO_0001023>)
+
+# Class: <http://flybase.org/reports/FBal0031616> (l(1)sc[hb.PP])
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://flybase.org/reports/FBal0031616> "FlyBase")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://flybase.org/reports/FBal0031616> "hunchback promoter construct of Parkhurst")
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBal0031616> "l(1)sc[hb.PP]")
+SubClassOf(<http://flybase.org/reports/FBal0031616> <http://purl.obolibrary.org/obo/SO_0001023>)
 
 # Class: <http://flybase.org/reports/FBal0032351> (otu[+Delta1])
 
@@ -21528,6 +21569,13 @@ SubClassOf(<http://flybase.org/reports/FBal0032352> <http://purl.obolibrary.org/
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://flybase.org/reports/FBal0032353> "FlyBase")
 AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBal0032353> "otu[+Delta3]")
 SubClassOf(<http://flybase.org/reports/FBal0032353> <http://purl.obolibrary.org/obo/SO_0001023>)
+
+# Class: <http://flybase.org/reports/FBal0032646> (sc[hb.PP])
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://flybase.org/reports/FBal0032646> "FlyBase")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://flybase.org/reports/FBal0032646> "hunchback promoter construct of Parkhurst")
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBal0032646> "sc[hb.PP]")
+SubClassOf(<http://flybase.org/reports/FBal0032646> <http://purl.obolibrary.org/obo/SO_0001023>)
 
 # Class: <http://flybase.org/reports/FBal0034210> (bcd[Delta14.LZ])
 
@@ -21818,7 +21866,6 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://flybase.org/reports/FBal0040484> "Hs-Gal4[M-4]")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://flybase.org/reports/FBal0040484> "heat shock construct of Brand")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://flybase.org/reports/FBal0040484> "heat shock-GAL4")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://flybase.org/reports/FBal0040484> "heat-shock-Gal4")
 AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBal0040484> "ScerGAL4[hs.PB]")
 SubClassOf(<http://flybase.org/reports/FBal0040484> <http://purl.obolibrary.org/obo/SO_0001023>)
 
@@ -24314,7 +24361,6 @@ SubClassOf(<http://flybase.org/reports/FBal0041156> <http://purl.obolibrary.org/
 # Class: <http://flybase.org/reports/FBal0041158> (EcollacZ[dpp.BS3.0])
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://flybase.org/reports/FBal0041158> "FlyBase")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://flybase.org/reports/FBal0041158> "BS3.0")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://flybase.org/reports/FBal0041158> "dpp-lacZ")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://flybase.org/reports/FBal0041158> "dpp[BS3.0]")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://flybase.org/reports/FBal0041158> "lacZ[dpp.BS3.0]")
@@ -26551,6 +26597,55 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <ht
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://flybase.org/reports/FBal0042015> "lacZ[tll.P4]")
 AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBal0042015> "EcollacZ[tll.P4]")
 SubClassOf(<http://flybase.org/reports/FBal0042015> <http://purl.obolibrary.org/obo/SO_0001023>)
+
+# Class: <http://flybase.org/reports/FBal0042016> (EcollacZ[tll.S1.hs])
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://flybase.org/reports/FBal0042016> "FlyBase")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://flybase.org/reports/FBal0042016> "lacZ[tll.S1.hs]")
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBal0042016> "EcollacZ[tll.S1.hs]")
+SubClassOf(<http://flybase.org/reports/FBal0042016> <http://purl.obolibrary.org/obo/SO_0001023>)
+
+# Class: <http://flybase.org/reports/FBal0042017> (EcollacZ[tll.S2.hs])
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://flybase.org/reports/FBal0042017> "FlyBase")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://flybase.org/reports/FBal0042017> "lacZ[tll.S2.hs]")
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBal0042017> "EcollacZ[tll.S2.hs]")
+SubClassOf(<http://flybase.org/reports/FBal0042017> <http://purl.obolibrary.org/obo/SO_0001023>)
+
+# Class: <http://flybase.org/reports/FBal0042018> (EcollacZ[tll.S3.hs])
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://flybase.org/reports/FBal0042018> "FlyBase")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://flybase.org/reports/FBal0042018> "lacZ[tll.S3.hs]")
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBal0042018> "EcollacZ[tll.S3.hs]")
+SubClassOf(<http://flybase.org/reports/FBal0042018> <http://purl.obolibrary.org/obo/SO_0001023>)
+
+# Class: <http://flybase.org/reports/FBal0042019> (EcollacZ[tll.S4.hs])
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://flybase.org/reports/FBal0042019> "FlyBase")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://flybase.org/reports/FBal0042019> "lacZ[tll.S4.hs]")
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBal0042019> "EcollacZ[tll.S4.hs]")
+SubClassOf(<http://flybase.org/reports/FBal0042019> <http://purl.obolibrary.org/obo/SO_0001023>)
+
+# Class: <http://flybase.org/reports/FBal0042020> (EcollacZ[tll.S5.hs])
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://flybase.org/reports/FBal0042020> "FlyBase")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://flybase.org/reports/FBal0042020> "lacZ[tll.S5.hs]")
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBal0042020> "EcollacZ[tll.S5.hs]")
+SubClassOf(<http://flybase.org/reports/FBal0042020> <http://purl.obolibrary.org/obo/SO_0001023>)
+
+# Class: <http://flybase.org/reports/FBal0042021> (EcollacZ[tll.S6.hs])
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://flybase.org/reports/FBal0042021> "FlyBase")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://flybase.org/reports/FBal0042021> "lacZ[tll.S6.hs]")
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBal0042021> "EcollacZ[tll.S6.hs]")
+SubClassOf(<http://flybase.org/reports/FBal0042021> <http://purl.obolibrary.org/obo/SO_0001023>)
+
+# Class: <http://flybase.org/reports/FBal0042022> (EcollacZ[tll.S7.hs])
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://flybase.org/reports/FBal0042022> "FlyBase")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://flybase.org/reports/FBal0042022> "lacZ[tll.S7.hs]")
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBal0042022> "EcollacZ[tll.S7.hs]")
+SubClassOf(<http://flybase.org/reports/FBal0042022> <http://purl.obolibrary.org/obo/SO_0001023>)
 
 # Class: <http://flybase.org/reports/FBal0042023> (EcollacZ[Tm1.1200.cTm])
 
@@ -40532,12 +40627,13 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBal0085681> "EcollacZ[frc-02619]")
 SubClassOf(<http://flybase.org/reports/FBal0085681> <http://purl.obolibrary.org/obo/SO_0001023>)
 
-# Class: <http://flybase.org/reports/FBal0085683> (EcollacZ[l(3)73Ah-02540])
+# Class: <http://flybase.org/reports/FBal0085683> (EcollacZ[sist-02540])
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://flybase.org/reports/FBal0085683> "FlyBase")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://flybase.org/reports/FBal0085683> "EcollacZ[02540]")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://flybase.org/reports/FBal0085683> "EcollacZ[l(3)73Ah-02540]")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://flybase.org/reports/FBal0085683> "lacZ[02540]")
-AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBal0085683> "EcollacZ[l(3)73Ah-02540]")
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBal0085683> "EcollacZ[sist-02540]")
 SubClassOf(<http://flybase.org/reports/FBal0085683> <http://purl.obolibrary.org/obo/SO_0001023>)
 
 # Class: <http://flybase.org/reports/FBal0085684> (EcollacZ[retn-02535])
@@ -41716,7 +41812,6 @@ SubClassOf(<http://flybase.org/reports/FBal0090656> <http://purl.obolibrary.org/
 # Class: <http://flybase.org/reports/FBal0091143> (Tn10tetR[rtTA.Act5C])
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://flybase.org/reports/FBal0091143> "FlyBase")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://flybase.org/reports/FBal0091143> "Tet-VP16")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://flybase.org/reports/FBal0091143> "Tn10tetR[Act5C.T:HsimVP16]")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://flybase.org/reports/FBal0091143> "pSC101tetR[Act5C.T:HsimVP16]")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://flybase.org/reports/FBal0091143> "reverse tetracycline transactivator")
@@ -43042,13 +43137,6 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://flybase.org/reports/FBal0095914> "alphaTub84B[-600:+696.T:EcollacZ]")
 AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBal0095914> "alphaTub84B[-600:+696.lacZ]")
 SubClassOf(<http://flybase.org/reports/FBal0095914> <http://purl.obolibrary.org/obo/SO_0001023>)
-
-# Class: <http://flybase.org/reports/FBal0097113> (Sh[CD8.Mhc.GFP(S65T)])
-
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://flybase.org/reports/FBal0097113> "FlyBase")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://flybase.org/reports/FBal0097113> "Sh[Mhc.T:AvicGFP-S65T,T:HsapCD8A]")
-AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBal0097113> "Sh[CD8.Mhc.GFP(S65T)]")
-SubClassOf(<http://flybase.org/reports/FBal0097113> <http://purl.obolibrary.org/obo/SO_0001023>)
 
 # Class: <http://flybase.org/reports/FBal0097122> (ScerGAL4[sca-P309])
 
@@ -47266,6 +47354,14 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <ht
 AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBal0148447> "AvicGFP[EGFP.alphaTub84B.B]")
 SubClassOf(<http://flybase.org/reports/FBal0148447> <http://purl.obolibrary.org/obo/SO_0001023>)
 
+# Class: <http://flybase.org/reports/FBal0148454> (AvicGFP[clu-G00271])
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://flybase.org/reports/FBal0148454> "FlyBase")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://flybase.org/reports/FBal0148454> "AvicGFP[CG8443-G00271]")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://flybase.org/reports/FBal0148454> "AvicGFP[CG8443-G271]")
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBal0148454> "AvicGFP[clu-G00271]")
+SubClassOf(<http://flybase.org/reports/FBal0148454> <http://purl.obolibrary.org/obo/SO_0001023>)
+
 # Class: <http://flybase.org/reports/FBal0148456> (AvicGFP[Ar1-G00112])
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://flybase.org/reports/FBal0148456> "FlyBase")
@@ -47451,6 +47547,13 @@ SubClassOf(<http://flybase.org/reports/FBal0150960> <http://purl.obolibrary.org/
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://flybase.org/reports/FBal0150961> "FlyBase")
 AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBal0150961> "AvicGFP[Hrb98DE-ZCL0588]")
 SubClassOf(<http://flybase.org/reports/FBal0150961> <http://purl.obolibrary.org/obo/SO_0001023>)
+
+# Class: <http://flybase.org/reports/FBal0150966> (AvicGFP[VhaAC45-ZCL0366])
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://flybase.org/reports/FBal0150966> "FlyBase")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://flybase.org/reports/FBal0150966> "AvicGFP[CG8029-ZCL0366]")
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBal0150966> "AvicGFP[VhaAC45-ZCL0366]")
+SubClassOf(<http://flybase.org/reports/FBal0150966> <http://purl.obolibrary.org/obo/SO_0001023>)
 
 # Class: <http://flybase.org/reports/FBal0150967> (AvicGFP[Zasp66-ZCL0663])
 
@@ -48923,6 +49026,13 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBal0189886> "ScerGAL4[Or33a.PF]")
 SubClassOf(<http://flybase.org/reports/FBal0189886> <http://purl.obolibrary.org/obo/SO_0001023>)
 
+# Class: <http://flybase.org/reports/FBal0189889> (ScerGAL4[mir-278-Gal4KI])
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://flybase.org/reports/FBal0189889> "FlyBase")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://flybase.org/reports/FBal0189889> "G4KI")
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBal0189889> "ScerGAL4[mir-278-Gal4KI]")
+SubClassOf(<http://flybase.org/reports/FBal0189889> <http://purl.obolibrary.org/obo/SO_0001023>)
+
 # Class: <http://flybase.org/reports/FBal0189896> (ScerGAL4[Or85b.PC])
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://flybase.org/reports/FBal0189896> "FlyBase")
@@ -49090,6 +49200,14 @@ SubClassOf(<http://flybase.org/reports/FBal0190275> <http://purl.obolibrary.org/
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://flybase.org/reports/FBal0190304> "FlyBase")
 AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBal0190304> "EcollacZ[8-miR.0.8]")
 SubClassOf(<http://flybase.org/reports/FBal0190304> <http://purl.obolibrary.org/obo/SO_0001023>)
+
+# Class: <http://flybase.org/reports/FBal0190312> (EcollacZ[scrt-E7-3-44a])
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://flybase.org/reports/FBal0190312> "FlyBase")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://flybase.org/reports/FBal0190312> "EcollacZ[scrt-E7-3-44]")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://flybase.org/reports/FBal0190312> "lacZ[scrt-E7-3-44]")
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBal0190312> "EcollacZ[scrt-E7-3-44a]")
+SubClassOf(<http://flybase.org/reports/FBal0190312> <http://purl.obolibrary.org/obo/SO_0001023>)
 
 # Class: <http://flybase.org/reports/FBal0190320> (MmusCd8a[Or47b.GFP.Tag:MYC])
 
@@ -54100,6 +54218,12 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <ht
 AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBal0246064> "ScerGAL4[82Y]")
 SubClassOf(<http://flybase.org/reports/FBal0246064> <http://purl.obolibrary.org/obo/SO_0001023>)
 
+# Class: <http://flybase.org/reports/FBal0246065> (ScerGAL4[203Y])
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://flybase.org/reports/FBal0246065> "FlyBase")
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBal0246065> "ScerGAL4[203Y]")
+SubClassOf(<http://flybase.org/reports/FBal0246065> <http://purl.obolibrary.org/obo/SO_0001023>)
+
 # Class: <http://flybase.org/reports/FBal0246086> (EcollacZ[slp1.s.DESE])
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://flybase.org/reports/FBal0246086> "FlyBase")
@@ -54252,13 +54376,14 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <ht
 AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBal0246612> "ScerGAL4[sNPF.2.4]")
 SubClassOf(<http://flybase.org/reports/FBal0246612> <http://purl.obolibrary.org/obo/SO_0001023>)
 
-# Class: <http://flybase.org/reports/FBal0246663> (SiaT[KI48])
+# Class: <http://flybase.org/reports/FBal0246663> (Siat[KI48])
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://flybase.org/reports/FBal0246663> "FlyBase")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://flybase.org/reports/FBal0246663> "KI48")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://flybase.org/reports/FBal0246663> "ST6Gal[KI48.T:IvirHA1]")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://flybase.org/reports/FBal0246663> "ST6Gal[KI48]")
-AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBal0246663> "SiaT[KI48]")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://flybase.org/reports/FBal0246663> "SiaT[KI48]")
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBal0246663> "Siat[KI48]")
 SubClassOf(<http://flybase.org/reports/FBal0246663> <http://purl.obolibrary.org/obo/SO_0001023>)
 
 # Class: <http://flybase.org/reports/FBal0246716> (ScerGAL4[HB4-93])
@@ -69673,6 +69798,13 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBal0258681> "ScerGAL4[19-12]")
 SubClassOf(<http://flybase.org/reports/FBal0258681> <http://purl.obolibrary.org/obo/SO_0001023>)
 
+# Class: <http://flybase.org/reports/FBal0258693> (Ir64a[Tag:HA])
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://flybase.org/reports/FBal0258693> "FlyBase")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://flybase.org/reports/FBal0258693> "Ir64a[T:IvirHA1]")
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBal0258693> "Ir64a[Tag:HA]")
+SubClassOf(<http://flybase.org/reports/FBal0258693> <http://purl.obolibrary.org/obo/SO_0001023>)
+
 # Class: <http://flybase.org/reports/FBal0258696> (ScerGAL4[Ir64a.PA])
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://flybase.org/reports/FBal0258696> "FlyBase")
@@ -71312,11 +71444,12 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <ht
 AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBal0261804> "AvicGFP[Smr-CPTI002514]")
 SubClassOf(<http://flybase.org/reports/FBal0261804> <http://purl.obolibrary.org/obo/SO_0001023>)
 
-# Class: <http://flybase.org/reports/FBal0261806> (AvicGFP[Lsd-2-CPTI002546])
+# Class: <http://flybase.org/reports/FBal0261806> (AvicGFP[Lsd2-CPTI002546])
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://flybase.org/reports/FBal0261806> "FlyBase")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://flybase.org/reports/FBal0261806> "AvicGFP[Lsd-2-CPTI002546]")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://flybase.org/reports/FBal0261806> "plin2-yfp[CPTI002546]")
-AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBal0261806> "AvicGFP[Lsd-2-CPTI002546]")
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBal0261806> "AvicGFP[Lsd2-CPTI002546]")
 SubClassOf(<http://flybase.org/reports/FBal0261806> <http://purl.obolibrary.org/obo/SO_0001023>)
 
 # Class: <http://flybase.org/reports/FBal0261807> (AvicGFP[Dek-CPTI002560])
@@ -71677,11 +71810,12 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBal0261989> "AvicGFP[bero-CPTI001654]")
 SubClassOf(<http://flybase.org/reports/FBal0261989> <http://purl.obolibrary.org/obo/SO_0001023>)
 
-# Class: <http://flybase.org/reports/FBal0261990> (AvicGFP[Lsd-2-CPTI001655])
+# Class: <http://flybase.org/reports/FBal0261990> (AvicGFP[Lsd2-CPTI001655])
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://flybase.org/reports/FBal0261990> "FlyBase")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://flybase.org/reports/FBal0261990> "AvicGFP[Lsd-2-CPTI001655]")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://flybase.org/reports/FBal0261990> "plin2-yfp[CPTI001655]")
-AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBal0261990> "AvicGFP[Lsd-2-CPTI001655]")
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBal0261990> "AvicGFP[Lsd2-CPTI001655]")
 SubClassOf(<http://flybase.org/reports/FBal0261990> <http://purl.obolibrary.org/obo/SO_0001023>)
 
 # Class: <http://flybase.org/reports/FBal0261991> (AvicGFP[dap-CPTI001658])
@@ -72907,12 +73041,13 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <ht
 AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBal0263487> "ScerGAL4[NP221]")
 SubClassOf(<http://flybase.org/reports/FBal0263487> <http://purl.obolibrary.org/obo/SO_0001023>)
 
-# Class: <http://flybase.org/reports/FBal0263508> (ScerGAL4[VGAT.PF])
+# Class: <http://flybase.org/reports/FBal0263508> (ScerGAL4[Vgat.PF])
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://flybase.org/reports/FBal0263508> "FlyBase")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://flybase.org/reports/FBal0263508> "ScerGAL4[VGAT.PF]")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://flybase.org/reports/FBal0263508> "ScerGAL4[VGAT]")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://flybase.org/reports/FBal0263508> "Vesicular GABA Transporter promoter construct of Fei")
-AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBal0263508> "ScerGAL4[VGAT.PF]")
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBal0263508> "ScerGAL4[Vgat.PF]")
 SubClassOf(<http://flybase.org/reports/FBal0263508> <http://purl.obolibrary.org/obo/SO_0001023>)
 
 # Class: <http://flybase.org/reports/FBal0263512> (ScerGAL4[ninaE.PTa])
@@ -75723,25 +75858,28 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBal0277118> "lin-52[GFP]")
 SubClassOf(<http://flybase.org/reports/FBal0277118> <http://purl.obolibrary.org/obo/SO_0001023>)
 
-# Class: <http://flybase.org/reports/FBal0277234> (CRMP[EGFP])
+# Class: <http://flybase.org/reports/FBal0277234> (Crmp[EGFP])
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://flybase.org/reports/FBal0277234> "FlyBase")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://flybase.org/reports/FBal0277234> "CRMP[EGFP]")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://flybase.org/reports/FBal0277234> "CRMP[T:AvicGFP-EGFP]")
-AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBal0277234> "CRMP[EGFP]")
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBal0277234> "Crmp[EGFP]")
 SubClassOf(<http://flybase.org/reports/FBal0277234> <http://purl.obolibrary.org/obo/SO_0001023>)
 
-# Class: <http://flybase.org/reports/FBal0277235> (CRMP[fs9a.EGFP])
+# Class: <http://flybase.org/reports/FBal0277235> (Crmp[fs9a.EGFP])
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://flybase.org/reports/FBal0277235> "FlyBase")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://flybase.org/reports/FBal0277235> "CRMP[fs9a.EGFP]")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://flybase.org/reports/FBal0277235> "CRMP[fs9a.T:AvicGFP-EGFP]")
-AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBal0277235> "CRMP[fs9a.EGFP]")
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBal0277235> "Crmp[fs9a.EGFP]")
 SubClassOf(<http://flybase.org/reports/FBal0277235> <http://purl.obolibrary.org/obo/SO_0001023>)
 
-# Class: <http://flybase.org/reports/FBal0277236> (CRMP[fs9b.EGFP])
+# Class: <http://flybase.org/reports/FBal0277236> (Crmp[fs9b.EGFP])
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://flybase.org/reports/FBal0277236> "FlyBase")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://flybase.org/reports/FBal0277236> "CRMP[fs9b.EGFP]")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://flybase.org/reports/FBal0277236> "CRMP[fs9b.T:AvicGFP-EGFP]")
-AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBal0277236> "CRMP[fs9b.EGFP]")
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBal0277236> "Crmp[fs9b.EGFP]")
 SubClassOf(<http://flybase.org/reports/FBal0277236> <http://purl.obolibrary.org/obo/SO_0001023>)
 
 # Class: <http://flybase.org/reports/FBal0277241> (EcollacZ[PPO2.PF])
@@ -120962,10 +121100,11 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <ht
 AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBal0327584> "ScerGAL4[CG14196.CRM6]")
 SubClassOf(<http://flybase.org/reports/FBal0327584> <http://purl.obolibrary.org/obo/SO_0001023>)
 
-# Class: <http://flybase.org/reports/FBal0327585> (ScerGAL4[CG16700.CRM7])
+# Class: <http://flybase.org/reports/FBal0327585> (ScerGAL4[sat2.CRM7])
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://flybase.org/reports/FBal0327585> "FlyBase")
-AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBal0327585> "ScerGAL4[CG16700.CRM7]")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://flybase.org/reports/FBal0327585> "ScerGAL4[CG16700.CRM7]")
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBal0327585> "ScerGAL4[sat2.CRM7]")
 SubClassOf(<http://flybase.org/reports/FBal0327585> <http://purl.obolibrary.org/obo/SO_0001023>)
 
 # Class: <http://flybase.org/reports/FBal0327587> (ScerGAL4[CG9864.CRM9])
@@ -137285,10 +137424,11 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBal0336145> "ScerGAL4[Targ2-MI03028-TG4.0]")
 SubClassOf(<http://flybase.org/reports/FBal0336145> <http://purl.obolibrary.org/obo/SO_0001023>)
 
-# Class: <http://flybase.org/reports/FBal0336164> (ScerGAL4[CG4752-MI13500-TG4.1])
+# Class: <http://flybase.org/reports/FBal0336164> (ScerGAL4[Oplah-MI13500-TG4.1])
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://flybase.org/reports/FBal0336164> "FlyBase")
-AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBal0336164> "ScerGAL4[CG4752-MI13500-TG4.1]")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://flybase.org/reports/FBal0336164> "ScerGAL4[CG4752-MI13500-TG4.1]")
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBal0336164> "ScerGAL4[Oplah-MI13500-TG4.1]")
 SubClassOf(<http://flybase.org/reports/FBal0336164> <http://purl.obolibrary.org/obo/SO_0001023>)
 
 # Class: <http://flybase.org/reports/FBal0336171> (ScerGAL4[CG7744-MI04719-TG4.2])
@@ -137367,6 +137507,7 @@ SubClassOf(<http://flybase.org/reports/FBal0336269> <http://purl.obolibrary.org/
 # Class: <http://flybase.org/reports/FBal0336270> (ScerGAL4[Octbeta3R-MI06217-TG4.un])
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://flybase.org/reports/FBal0336270> "FlyBase")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://flybase.org/reports/FBal0336270> "Trojan-Octbeta3R-GAL4")
 AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBal0336270> "ScerGAL4[Octbeta3R-MI06217-TG4.un]")
 SubClassOf(<http://flybase.org/reports/FBal0336270> <http://purl.obolibrary.org/obo/SO_0001023>)
 
@@ -138050,6 +138191,14 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBal0340261> "ScerGAL4[Ddc.HL7]")
 SubClassOf(<http://flybase.org/reports/FBal0340261> <http://purl.obolibrary.org/obo/SO_0001023>)
 
+# Class: <http://flybase.org/reports/FBal0340270> (EcollacZ[Adh.bcd.Delta7])
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://flybase.org/reports/FBal0340270> "FlyBase")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://flybase.org/reports/FBal0340270> "bcd[Adh.PDelta7.T:EcollacZ]")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://flybase.org/reports/FBal0340270> "bcd[Adh.PDelta7.T:lacZ]")
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBal0340270> "EcollacZ[Adh.bcd.Delta7]")
+SubClassOf(<http://flybase.org/reports/FBal0340270> <http://purl.obolibrary.org/obo/SO_0001023>)
+
 # Class: <http://flybase.org/reports/FBal0340313> (EcollexA[VT049479])
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://flybase.org/reports/FBal0340313> "FlyBase")
@@ -138355,6 +138504,12 @@ SubClassOf(<http://flybase.org/reports/FBal0341703> <http://purl.obolibrary.org/
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://flybase.org/reports/FBal0341704> "FlyBase")
 AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBal0341704> "EcollexA[VT049239]")
 SubClassOf(<http://flybase.org/reports/FBal0341704> <http://purl.obolibrary.org/obo/SO_0001023>)
+
+# Class: <http://flybase.org/reports/FBal0341720> (ClC-b[EGFP])
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://flybase.org/reports/FBal0341720> "FlyBase")
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBal0341720> "ClC-b[EGFP]")
+SubClassOf(<http://flybase.org/reports/FBal0341720> <http://purl.obolibrary.org/obo/SO_0001023>)
 
 # Class: <http://flybase.org/reports/FBal0341738> (ScerGAL4[DBD.R60F07])
 
@@ -140452,10 +140607,11 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBal0355928> "EcollexA[Trhn-2A-lexA]")
 SubClassOf(<http://flybase.org/reports/FBal0355928> <http://purl.obolibrary.org/obo/SO_0001023>)
 
-# Class: <http://flybase.org/reports/FBal0355930> (EcollexA[VGAT-2A-lexA])
+# Class: <http://flybase.org/reports/FBal0355930> (EcollexA[Vgat-2A-lexA])
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://flybase.org/reports/FBal0355930> "FlyBase")
-AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBal0355930> "EcollexA[VGAT-2A-lexA]")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://flybase.org/reports/FBal0355930> "EcollexA[VGAT-2A-lexA]")
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBal0355930> "EcollexA[Vgat-2A-lexA]")
 SubClassOf(<http://flybase.org/reports/FBal0355930> <http://purl.obolibrary.org/obo/SO_0001023>)
 
 # Class: <http://flybase.org/reports/FBal0355931> (EcollexA[VGlut1-2A-lexA])
@@ -140480,12 +140636,14 @@ SubClassOf(<http://flybase.org/reports/FBal0355951> <http://purl.obolibrary.org/
 # Class: <http://flybase.org/reports/FBal0355954> (ScerGAL4[Dop1R2-KOGal4])
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://flybase.org/reports/FBal0355954> "FlyBase")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://flybase.org/reports/FBal0355954> "Dop1R2[KOGal4]")
 AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBal0355954> "ScerGAL4[Dop1R2-KOGal4]")
 SubClassOf(<http://flybase.org/reports/FBal0355954> <http://purl.obolibrary.org/obo/SO_0001023>)
 
 # Class: <http://flybase.org/reports/FBal0355955> (ScerGAL4[Dop2R-KOGal4])
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://flybase.org/reports/FBal0355955> "FlyBase")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://flybase.org/reports/FBal0355955> "Dop2R[KOGal4]")
 AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBal0355955> "ScerGAL4[Dop2R-KOGal4]")
 SubClassOf(<http://flybase.org/reports/FBal0355955> <http://purl.obolibrary.org/obo/SO_0001023>)
 
@@ -140688,10 +140846,11 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <ht
 AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBal0356052> "ScerGAL4[Trissin-2A-GAL4]")
 SubClassOf(<http://flybase.org/reports/FBal0356052> <http://purl.obolibrary.org/obo/SO_0001023>)
 
-# Class: <http://flybase.org/reports/FBal0356053> (ScerGAL4[VGAT-2A-GAL4])
+# Class: <http://flybase.org/reports/FBal0356053> (ScerGAL4[Vgat-2A-GAL4])
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://flybase.org/reports/FBal0356053> "FlyBase")
-AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBal0356053> "ScerGAL4[VGAT-2A-GAL4]")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://flybase.org/reports/FBal0356053> "ScerGAL4[VGAT-2A-GAL4]")
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBal0356053> "ScerGAL4[Vgat-2A-GAL4]")
 SubClassOf(<http://flybase.org/reports/FBal0356053> <http://purl.obolibrary.org/obo/SO_0001023>)
 
 # Class: <http://flybase.org/reports/FBal0356054> (ScerGAL4[VGlut1-2A-GAL4])
@@ -145508,6 +145667,14 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://flybase.org/reports/FBal0410727> "Khc::nod[UAS.lacZ]")
 AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBal0410727> "EcollacZ[UAS.Tag:MT(nod)]")
 SubClassOf(<http://flybase.org/reports/FBal0410727> <http://purl.obolibrary.org/obo/SO_0001023>)
+
+# Class: <http://flybase.org/reports/FBal0413938> (AvicGFP[S65T.Mhc.Tag:TS(Sh)])
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://flybase.org/reports/FBal0413938> "FlyBase")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://flybase.org/reports/FBal0413938> "Sh[CD8.Mhc.GFP(S65T)]")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://flybase.org/reports/FBal0413938> "Sh[Mhc.T:AvicGFP-S65T,T:HsapCD8A]")
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBal0413938> "AvicGFP[S65T.Mhc.Tag:TS(Sh)]")
+SubClassOf(<http://flybase.org/reports/FBal0413938> <http://purl.obolibrary.org/obo/SO_0001023>)
 
 # Class: <http://flybase.org/reports/FBco0000001> (ScerGAL4[DBD.R22B12]∩HsapRELA[AD.R14E06])
 
@@ -156539,6 +156706,7 @@ SubClassOf(<http://flybase.org/reports/FBco0001098> ObjectSomeValuesFrom(<http:/
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000028> <http://flybase.org/reports/FBco0001099> "SS51118")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://flybase.org/reports/FBco0001099> "FlyBase")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://flybase.org/reports/FBco0001099> "SAG-1")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://flybase.org/reports/FBco0001099> "SAG-GAL4")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://flybase.org/reports/FBco0001099> "SAG-SS")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://flybase.org/reports/FBco0001099> "SAG1-GAL4")
@@ -163377,6 +163545,7 @@ SubClassOf(<http://flybase.org/reports/FBco0001794> ObjectSomeValuesFrom(<http:/
 # Class: <http://flybase.org/reports/FBco0001795> (ScerGAL4[DBD.VT045154]∩HsapRELA[AD.VT050405])
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://flybase.org/reports/FBco0001795> "FlyBase")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://flybase.org/reports/FBco0001795> "SAG-2")
 AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBco0001795> "ScerGAL4[DBD.VT045154]∩HsapRELA[AD.VT050405]")
 SubClassOf(<http://flybase.org/reports/FBco0001795> <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010>)
 SubClassOf(<http://flybase.org/reports/FBco0001795> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008> <http://flybase.org/reports/FBal0316907>))

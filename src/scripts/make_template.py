@@ -33,4 +33,10 @@ template_header = pd.DataFrame({'ID':['ID'], 'TYPE': ['TYPE'],
 
 template = pd.concat([template_header, FBco_data, FBal_data, exp_FBal_data], ignore_index=True)
 
+# ROBOT template reads a backslash as an escape and drops it, so FlyBase symbols lost
+# theirs (Scer\GAL4[30A] was released as "ScerGAL4[30A]"). Double every backslash in
+# the data rows (the header row has none) so ROBOT keeps one.
+template.iloc[1:] = template.iloc[1:].apply(
+    lambda col: col.map(lambda v: v.replace('\\', '\\\\') if isinstance(v, str) else v))
+
 template.to_csv('tmp/template.tsv', sep='\t', index=None)
